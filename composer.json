@@ -1,0 +1,14 @@
+{
+    "name": "cardif/modification-administratives-bddf-cardif",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Khalid Sookia",
+            "email": "khalidsookia@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"": "src/"}
+    },
+    "require": {}
+}
