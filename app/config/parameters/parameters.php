@@ -9,5 +9,8 @@
 $parameters = [
     "siteRoot" => "index.php",
     "email" => "khalidsookia@gmail.com",
-    "environment" => "dev"
+    "db_port" => 3306,
+    "db_name" => "",
+    "db_host" => "",
+    "db_pass" => "",
 ];

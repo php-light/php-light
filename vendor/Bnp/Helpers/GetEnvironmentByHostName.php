@@ -48,7 +48,7 @@ class GetEnvironmentByHostName
     public function checkHostForEnv()
     {
         foreach ($this->getHosts() as $env => $hosts) {
-            if (in_array($_SERVER["SERVER_NAME"], $hosts["host"])) {
+            if (isset($hosts["host"]) && in_array($_SERVER["SERVER_NAME"], $hosts["host"])) {
                 $this->setEnv($env);
             }
         }

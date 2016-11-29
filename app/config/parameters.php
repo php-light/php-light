@@ -10,4 +10,13 @@ use Bnp\Helpers\GetEnvironmentByHostName;
 
 // Environment check
 $environment = new GetEnvironmentByHostName;
-$environment = $environment->getEnv();
+$environment = strtolower($environment->getEnv());
+
+include_once "parameters/parameters.php";
+
+if (file_exists(__DIR__ . "/parameters/" . $environment .".php"))
+    include_once __DIR__ . "/parameters/" . $environment .".php";
+
+
+if (isset($$environment)) $globalParameters = array_merge($parameters, $$environment);
+else $globalParameters = $parameters;
