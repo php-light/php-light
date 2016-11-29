@@ -6,17 +6,43 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit475cdc6e606f7133e879da8663e55663
 {
+    public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\VarDumper\\' => 28,
+        ),
+        'I' => 
+        array (
+            'IKNSA\\HelperBundle\\' => 19,
+        ),
         'B' => 
         array (
-            'Bnp\\Helpers\\' => 12,
+            'Bnpparibas\\Helpers\\' => 19,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Bnp\\Helpers\\' => 
+        'Symfony\\Polyfill\\Mbstring\\' => 
         array (
-            0 => __DIR__ . '/..' . '/Bnp/Helpers',
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\VarDumper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'IKNSA\\HelperBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/iknsa/helper-bundle',
+        ),
+        'Bnpparibas\\Helpers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bnpparibas/helpers',
         ),
     );
 

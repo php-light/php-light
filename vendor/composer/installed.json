@@ -1,1 +1,207 @@
-[]
+[
+    {
+        "name": "symfony/polyfill-mbstring",
+        "version": "v1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-mbstring.git",
+            "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e79d363049d1c2128f133a2667e4f4190904f7f4",
+            "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "suggest": {
+            "ext-mbstring": "For best performance"
+        },
+        "time": "2016-11-14 01:06:16",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Mbstring\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill for the Mbstring extension",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "mbstring",
+            "polyfill",
+            "portable",
+            "shim"
+        ]
+    },
+    {
+        "name": "symfony/var-dumper",
+        "version": "v3.1.7",
+        "version_normalized": "3.1.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/var-dumper.git",
+            "reference": "0c2d613e890e33f4da810159ac97931068f5bd17"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/0c2d613e890e33f4da810159ac97931068f5bd17",
+            "reference": "0c2d613e890e33f4da810159ac97931068f5bd17",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.9",
+            "symfony/polyfill-mbstring": "~1.0"
+        },
+        "require-dev": {
+            "twig/twig": "~1.20|~2.0"
+        },
+        "suggest": {
+            "ext-symfony_debug": ""
+        },
+        "time": "2016-11-03 08:04:31",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "Resources/functions/dump.php"
+            ],
+            "psr-4": {
+                "Symfony\\Component\\VarDumper\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony mechanism for exploring and dumping PHP variables",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "debug",
+            "dump"
+        ]
+    },
+    {
+        "name": "bnpparibas/helpers",
+        "version": "0.0.3-stable",
+        "version_normalized": "0.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bnpparibas/Helpers.git",
+            "reference": "ffc6b79f4568b0fb1180501b2c950dd97f1d2610"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bnpparibas/Helpers/zipball/ffc6b79f4568b0fb1180501b2c950dd97f1d2610",
+            "reference": "ffc6b79f4568b0fb1180501b2c950dd97f1d2610",
+            "shasum": ""
+        },
+        "require": {
+            "bnpparibas/helpers": "0.0.3"
+        },
+        "time": "2016-11-29 21:40:51",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Bnpparibas\\Helpers\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Khalid Sookia",
+                "email": "khalidsookia@gmail.com"
+            }
+        ],
+        "description": "PHP helpers"
+    },
+    {
+        "name": "iknsa/helper-bundle",
+        "version": "0.0.2-stable",
+        "version_normalized": "0.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/iknsa/HelperBundle.git",
+            "reference": "1c26d0367f56fe88f0bf876aefc8607cd7bc5c88"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/iknsa/HelperBundle/zipball/1c26d0367f56fe88f0bf876aefc8607cd7bc5c88",
+            "reference": "1c26d0367f56fe88f0bf876aefc8607cd7bc5c88",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3"
+        },
+        "time": "2016-11-29 21:48:49",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "IKNSA\\HelperBundle\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Khalid Sookia",
+                "email": "khalidsookia@gmail.com"
+            }
+        ],
+        "description": "A few helpers and utilities in php"
+    }
+]

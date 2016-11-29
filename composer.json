@@ -9,9 +9,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "": "src/",
-            "Bnp\\Helpers\\": "vendor/Bnp/Helpers"
+            "": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "symfony/var-dumper": "^3.1",
+        "bnpparibas/helpers": "^0.0.3",
+        "iknsa/helper-bundle": "^0.0.2"
+    }
 }

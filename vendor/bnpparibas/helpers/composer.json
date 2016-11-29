@@ -1,0 +1,21 @@
+{
+    "name": "bnpparibas/helpers",
+    "description": "PHP helpers",
+    "type": "library",
+    "require": {
+        "bnpparibas/helpers": "0.0.3"
+    },
+    "authors": [
+        {
+            "name": "Khalid Sookia",
+            "email": "khalidsookia@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Bnpparibas\\Helpers\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "stable"
+}

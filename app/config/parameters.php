@@ -6,7 +6,7 @@
  * Time: 18:28
  */
 
-use Bnp\Helpers\GetEnvironmentByHostName;
+use Bnpparibas\Helpers\GetEnvironmentByHostName;
 
 // Environment check
 $environment = new GetEnvironmentByHostName;
@@ -20,3 +20,8 @@ if (file_exists(__DIR__ . "/parameters/" . $environment .".php"))
 
 if (isset($$environment)) $globalParameters = array_merge($parameters, $$environment);
 else $globalParameters = $parameters;
+
+dump($globalParameters);
+
+$url = new \IKNSA\HelperBundle\Util\Url("http://modifsadmi.bnpparibas.dev/index.php");
+dump($url);

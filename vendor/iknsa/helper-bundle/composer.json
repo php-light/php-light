@@ -1,0 +1,22 @@
+{
+    "name": "iknsa/helper-bundle",
+    "description": "A few helpers and utilities in php",
+    "type": "library",
+    "require": {
+        "php": "^5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khalid Sookia",
+            "email": "khalidsookia@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "IKNSA\\HelperBundle\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "stable"
+}

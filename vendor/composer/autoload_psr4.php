@@ -6,6 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Bnp\\Helpers\\' => array($vendorDir . '/Bnp/Helpers'),
+    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
+    'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
+    'IKNSA\\HelperBundle\\' => array($vendorDir . '/iknsa/helper-bundle'),
+    'Bnpparibas\\Helpers\\' => array($vendorDir . '/bnpparibas/helpers'),
     '' => array($baseDir . '/src'),
 );

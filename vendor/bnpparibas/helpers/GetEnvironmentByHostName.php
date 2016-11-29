@@ -6,7 +6,7 @@
  * Time: 19:50
  */
 
-namespace Bnp\Helpers;
+namespace Bnpparibas\Helpers;
 
 
 class GetEnvironmentByHostName
