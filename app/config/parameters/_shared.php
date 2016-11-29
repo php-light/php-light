@@ -6,8 +6,8 @@
  * Time: 18:28
  */
 
-$parameters = array(
+$parameters = [
     "siteRoot" => "index.php",
     "email" => "khalidsookia@gmail.com",
-    "environment" => "production"
-);
+    "environment" => "dev"
+];

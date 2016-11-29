@@ -8,7 +8,10 @@
         }
     ],
     "autoload": {
-        "psr-4": {"": "src/"}
+        "psr-4": {
+            "": "src/",
+            "Bnp\\Helpers\\": "vendor/Bnp/Helpers"
+        }
     },
     "require": {}
 }

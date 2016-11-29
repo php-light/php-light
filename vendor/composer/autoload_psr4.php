@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Bnp\\Helpers\\' => array($vendorDir . '/Bnp/Helpers'),
     '' => array($baseDir . '/src'),
 );
