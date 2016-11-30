@@ -61,155 +61,6 @@
         ]
     },
     {
-        "name": "iknsa/helper-bundle",
-        "version": "0.0.2-stable",
-        "version_normalized": "0.0.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/iknsa/HelperBundle.git",
-            "reference": "1c26d0367f56fe88f0bf876aefc8607cd7bc5c88"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/iknsa/HelperBundle/zipball/1c26d0367f56fe88f0bf876aefc8607cd7bc5c88",
-            "reference": "1c26d0367f56fe88f0bf876aefc8607cd7bc5c88",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.3"
-        },
-        "time": "2016-11-29 21:48:49",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "IKNSA\\HelperBundle\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Khalid Sookia",
-                "email": "khalidsookia@gmail.com"
-            }
-        ],
-        "description": "A few helpers and utilities in php"
-    },
-    {
-        "name": "romenys/components",
-        "version": "0.0.1-stable",
-        "version_normalized": "0.0.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/romenys/components.git",
-            "reference": "ac745e2c86dc143bab1b2b5c420ffcb438b79912"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/romenys/components/zipball/ac745e2c86dc143bab1b2b5c420ffcb438b79912",
-            "reference": "ac745e2c86dc143bab1b2b5c420ffcb438b79912",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4"
-        },
-        "time": "2016-11-30 16:18:56",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Romenys\\Components\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "authors": [
-            {
-                "name": "Khalid Sookia",
-                "email": "khalidsookia@gmail.com"
-            }
-        ],
-        "description": "Some PHP components like parameters.ini parser with dynamic environments specific parmeters"
-    },
-    {
-        "name": "romenys/helpers",
-        "version": "0.0.1-stable",
-        "version_normalized": "0.0.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/romenys/helpers.git",
-            "reference": "b0a2981eb8d3980deaced2d5c2898d0b53e5119d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/romenys/helpers/zipball/b0a2981eb8d3980deaced2d5c2898d0b53e5119d",
-            "reference": "b0a2981eb8d3980deaced2d5c2898d0b53e5119d",
-            "shasum": ""
-        },
-        "time": "2016-11-30 15:17:15",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Romenys\\Helpers\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "authors": [
-            {
-                "name": "Khalid Sookia",
-                "email": "khalidsookia@gmail.com"
-            }
-        ],
-        "description": "PHP helpers"
-    },
-    {
-        "name": "romenys/router",
-        "version": "0.0.1-stable",
-        "version_normalized": "0.0.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/romenys/router.git",
-            "reference": "ab208e29e4d4f017f538ac026daf712ed5913d80"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/romenys/router/zipball/ab208e29e4d4f017f538ac026daf712ed5913d80",
-            "reference": "ab208e29e4d4f017f538ac026daf712ed5913d80",
-            "shasum": ""
-        },
-        "time": "2016-11-30 15:15:22",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Romenys\\Router\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "authors": [
-            {
-                "name": "Khalid Sookia",
-                "email": "khalidsookia@gmail.com"
-            }
-        ],
-        "description": "A PHP router library"
-    },
-    {
         "name": "symfony/var-dumper",
         "version": "v3.2.0",
         "version_normalized": "3.2.0.0",
@@ -273,5 +124,151 @@
             "debug",
             "dump"
         ]
+    },
+    {
+        "name": "iknsa/helper-bundle",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/iknsa/HelperBundle.git",
+            "reference": "41f523ca13474d2b2b5c22fa76dfecd13a791abc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/iknsa/HelperBundle/zipball/41f523ca13474d2b2b5c22fa76dfecd13a791abc",
+            "reference": "41f523ca13474d2b2b5c22fa76dfecd13a791abc",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3"
+        },
+        "time": "2016-11-30 18:26:29",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "IKNSA\\HelperBundle\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Khalid Sookia",
+                "email": "khalidsookia@gmail.com"
+            }
+        ],
+        "description": "A few helpers and utilities in php"
+    },
+    {
+        "name": "romenys/components",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/romenys/components.git",
+            "reference": "777d61751e391efb6976fd3c2a18d30089770020"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/romenys/components/zipball/777d61751e391efb6976fd3c2a18d30089770020",
+            "reference": "777d61751e391efb6976fd3c2a18d30089770020",
+            "shasum": ""
+        },
+        "time": "2016-11-30 18:30:36",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Romenys\\Components\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Khalid Sookia",
+                "email": "khalidsookia@gmail.com"
+            }
+        ],
+        "description": "Some PHP components like parameters.ini parser with dynamic environments specific parmeters"
+    },
+    {
+        "name": "romenys/helpers",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/romenys/helpers.git",
+            "reference": "b0a2981eb8d3980deaced2d5c2898d0b53e5119d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/romenys/helpers/zipball/b0a2981eb8d3980deaced2d5c2898d0b53e5119d",
+            "reference": "b0a2981eb8d3980deaced2d5c2898d0b53e5119d",
+            "shasum": ""
+        },
+        "time": "2016-11-30 15:17:15",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Romenys\\Helpers\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Khalid Sookia",
+                "email": "khalidsookia@gmail.com"
+            }
+        ],
+        "description": "PHP helpers"
+    },
+    {
+        "name": "romenys/router",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/romenys/router.git",
+            "reference": "ab208e29e4d4f017f538ac026daf712ed5913d80"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/romenys/router/zipball/ab208e29e4d4f017f538ac026daf712ed5913d80",
+            "reference": "ab208e29e4d4f017f538ac026daf712ed5913d80",
+            "shasum": ""
+        },
+        "time": "2016-11-30 15:15:22",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Romenys\\Router\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Khalid Sookia",
+                "email": "khalidsookia@gmail.com"
+            }
+        ],
+        "description": "A PHP router library"
     }
 ]

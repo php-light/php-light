@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f6e5a82657df5c1d7685fbfcedc29b51",
-    "content-hash": "f6350c91db1f56465308cb2c11a5d80a",
+    "hash": "60729696f1556e917010683120671fa4",
+    "content-hash": "57132d715e80678439190ab56ce53154",
     "packages": [
         {
             "name": "iknsa/helper-bundle",
-            "version": "0.0.2-stable",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/iknsa/HelperBundle.git",
-                "reference": "1c26d0367f56fe88f0bf876aefc8607cd7bc5c88"
+                "reference": "41f523ca13474d2b2b5c22fa76dfecd13a791abc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/iknsa/HelperBundle/zipball/1c26d0367f56fe88f0bf876aefc8607cd7bc5c88",
-                "reference": "1c26d0367f56fe88f0bf876aefc8607cd7bc5c88",
+                "url": "https://api.github.com/repos/iknsa/HelperBundle/zipball/41f523ca13474d2b2b5c22fa76dfecd13a791abc",
+                "reference": "41f523ca13474d2b2b5c22fa76dfecd13a791abc",
                 "shasum": ""
             },
             "require": {
@@ -44,24 +44,21 @@
                 }
             ],
             "description": "A few helpers and utilities in php",
-            "time": "2016-11-29 21:48:49"
+            "time": "2016-11-30 18:26:29"
         },
         {
             "name": "romenys/components",
-            "version": "0.0.1-stable",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/romenys/components.git",
-                "reference": "ac745e2c86dc143bab1b2b5c420ffcb438b79912"
+                "reference": "777d61751e391efb6976fd3c2a18d30089770020"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/romenys/components/zipball/ac745e2c86dc143bab1b2b5c420ffcb438b79912",
-                "reference": "ac745e2c86dc143bab1b2b5c420ffcb438b79912",
+                "url": "https://api.github.com/repos/romenys/components/zipball/777d61751e391efb6976fd3c2a18d30089770020",
+                "reference": "777d61751e391efb6976fd3c2a18d30089770020",
                 "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4"
             },
             "type": "library",
             "autoload": {
@@ -80,11 +77,11 @@
                 }
             ],
             "description": "Some PHP components like parameters.ini parser with dynamic environments specific parmeters",
-            "time": "2016-11-30 16:18:56"
+            "time": "2016-11-30 18:30:36"
         },
         {
             "name": "romenys/helpers",
-            "version": "0.0.1-stable",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/romenys/helpers.git",
@@ -117,7 +114,7 @@
         },
         {
             "name": "romenys/router",
-            "version": "0.0.1-stable",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/romenys/router.git",
@@ -274,7 +271,12 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "iknsa/helper-bundle": 20,
+        "romenys/components": 20,
+        "romenys/helpers": 20,
+        "romenys/router": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
