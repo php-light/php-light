@@ -4,78 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "06bdb2025a344173d4aed45d7bbf0acb",
-    "content-hash": "c377feef6b2c19e014257bcd785ad03e",
+    "hash": "f6e5a82657df5c1d7685fbfcedc29b51",
+    "content-hash": "f6350c91db1f56465308cb2c11a5d80a",
     "packages": [
-        {
-            "name": "bnpparibas/helpers",
-            "version": "0.0.3-stable",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bnpparibas/Helpers.git",
-                "reference": "ffc6b79f4568b0fb1180501b2c950dd97f1d2610"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bnpparibas/Helpers/zipball/ffc6b79f4568b0fb1180501b2c950dd97f1d2610",
-                "reference": "ffc6b79f4568b0fb1180501b2c950dd97f1d2610",
-                "shasum": ""
-            },
-            "require": {
-                "bnpparibas/helpers": "0.0.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Bnpparibas\\Helpers\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Khalid Sookia",
-                    "email": "khalidsookia@gmail.com"
-                }
-            ],
-            "description": "PHP helpers",
-            "time": "2016-11-29 21:40:51"
-        },
-        {
-            "name": "bnpparibas/router",
-            "version": "0.0.2-stable",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bnpparibas/router.git",
-                "reference": "8a094e82ea1230dbeefe66aec16a0bd00012d5a6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bnpparibas/router/zipball/8a094e82ea1230dbeefe66aec16a0bd00012d5a6",
-                "reference": "8a094e82ea1230dbeefe66aec16a0bd00012d5a6",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Bnpparibas\\Router\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Khalid Sookia",
-                    "email": "khalidsookia@gmail.com"
-                }
-            ],
-            "description": "A PHP router library",
-            "time": "2016-11-30 01:09:56"
-        },
         {
             "name": "iknsa/helper-bundle",
             "version": "0.0.2-stable",
@@ -114,6 +45,108 @@
             ],
             "description": "A few helpers and utilities in php",
             "time": "2016-11-29 21:48:49"
+        },
+        {
+            "name": "romenys/components",
+            "version": "0.0.1-stable",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/romenys/components.git",
+                "reference": "ac745e2c86dc143bab1b2b5c420ffcb438b79912"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/romenys/components/zipball/ac745e2c86dc143bab1b2b5c420ffcb438b79912",
+                "reference": "ac745e2c86dc143bab1b2b5c420ffcb438b79912",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Romenys\\Components\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Khalid Sookia",
+                    "email": "khalidsookia@gmail.com"
+                }
+            ],
+            "description": "Some PHP components like parameters.ini parser with dynamic environments specific parmeters",
+            "time": "2016-11-30 16:18:56"
+        },
+        {
+            "name": "romenys/helpers",
+            "version": "0.0.1-stable",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/romenys/helpers.git",
+                "reference": "b0a2981eb8d3980deaced2d5c2898d0b53e5119d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/romenys/helpers/zipball/b0a2981eb8d3980deaced2d5c2898d0b53e5119d",
+                "reference": "b0a2981eb8d3980deaced2d5c2898d0b53e5119d",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Romenys\\Helpers\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Khalid Sookia",
+                    "email": "khalidsookia@gmail.com"
+                }
+            ],
+            "description": "PHP helpers",
+            "time": "2016-11-30 15:17:15"
+        },
+        {
+            "name": "romenys/router",
+            "version": "0.0.1-stable",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/romenys/router.git",
+                "reference": "ab208e29e4d4f017f538ac026daf712ed5913d80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/romenys/router/zipball/ab208e29e4d4f017f538ac026daf712ed5913d80",
+                "reference": "ab208e29e4d4f017f538ac026daf712ed5913d80",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Romenys\\Router\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Khalid Sookia",
+                    "email": "khalidsookia@gmail.com"
+                }
+            ],
+            "description": "A PHP router library",
+            "time": "2016-11-30 15:15:22"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -176,16 +209,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v3.1.7",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "0c2d613e890e33f4da810159ac97931068f5bd17"
+                "reference": "86f4e8aeb07bd5fb467f6bdd599a30298d19fa5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/0c2d613e890e33f4da810159ac97931068f5bd17",
-                "reference": "0c2d613e890e33f4da810159ac97931068f5bd17",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/86f4e8aeb07bd5fb467f6bdd599a30298d19fa5f",
+                "reference": "86f4e8aeb07bd5fb467f6bdd599a30298d19fa5f",
                 "shasum": ""
             },
             "require": {
@@ -201,7 +234,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -235,7 +268,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2016-11-03 08:04:31"
+            "time": "2016-11-29 10:33:09"
         }
     ],
     "packages-dev": [],

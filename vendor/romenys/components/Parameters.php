@@ -6,9 +6,9 @@
  * Time: 18:28
  */
 
-namespace IKNSA\Components;
+namespace Romenys\Components;
 
-use Bnpparibas\Helpers\GetEnvironmentByHostName;
+use Romenys\Helpers\GetEnvironmentByHostName;
 
 class Parameters
 {
@@ -68,12 +68,5 @@ class Parameters
     public function getParameters()
     {
         return $this->parameters;
-    }
-
-    public function addParameters($key, $value)
-    {
-        $this->parameters[$key] = $value;
-
-        return $this;
     }
 }

@@ -6,7 +6,7 @@
  * Time: 19:50
  */
 
-namespace Bnpparibas\Helpers;
+namespace Romenys\Helpers;
 
 
 class GetEnvironmentByHostName
@@ -23,7 +23,7 @@ class GetEnvironmentByHostName
 
     public function setHosts()
     {
-        $this->hosts = json_decode(file_get_contents(__DIR__ . "/../../../app/config/hosts.json"), true);
+        $this->hosts = json_decode(file_get_contents("app/config/hosts.json"), true);
 
         return $this;
     }
@@ -62,3 +62,6 @@ class GetEnvironmentByHostName
         return $this;
     }
 }
+
+$environment = new GetEnvironmentByHostName();
+$environment->getEnv();

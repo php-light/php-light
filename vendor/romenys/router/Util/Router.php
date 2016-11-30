@@ -6,7 +6,7 @@
  * Time: 23:08
  */
 
-namespace Bnpparibas\Router\Util;
+namespace Romenys\Router\Util;
 
 
 class Router
@@ -23,10 +23,10 @@ class Router
         $this->getRoutingFiles();
     }
 
-    public function getRoutingFiles($files = null)
+    private function getRoutingFiles($files = null)
     {
         if ($files === null) {
-            $files = parse_ini_file("app/config/routing.ini", true);
+            $files = json_decode(file_get_contents("app/config/routing.json"), true);
         }
 
         foreach ($files as $type => $value) {
@@ -43,12 +43,12 @@ class Router
     private function parseRoutingFile($file)
     {
         if (is_array($file)) {
-            foreach ($file as $path) {
+            foreach ($file as $name => $path) {
                 if (!file_exists($path)) continue;
 
-                $this->processFileContent(parse_ini_file($path, true));
+                $this->processFileContent(json_decode(file_get_contents($path), true));
 
-                $this->addFiles($path);
+                $this->addFiles($name, $path);
             }
         }
 
@@ -69,9 +69,9 @@ class Router
         }
     }
 
-    private function addFiles($file)
+    private function addFiles($name, $file)
     {
-        $this->files[] = $file;
+        $this->files[$name] = $file;
 
         return $this;
     }

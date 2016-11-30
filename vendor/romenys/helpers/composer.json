@@ -1,6 +1,6 @@
 {
-    "name": "he-concord/router",
-    "description": "A PHP router library",
+    "name": "romenys/helpers",
+    "description": "PHP helpers",
     "type": "library",
     "require": {
     },
@@ -11,7 +11,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "He\\Router\\": "" },
+        "psr-4": { "Romenys\\Helpers\\": "" },
         "exclude-from-classmap": [
             "/Tests/"
         ]

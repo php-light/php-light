@@ -8,9 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
+    'Romenys\\Router\\' => array($vendorDir . '/romenys/router'),
+    'Romenys\\Helpers\\' => array($vendorDir . '/romenys/helpers'),
+    'Romenys\\Components\\' => array($vendorDir . '/romenys/components'),
     'IKNSA\\HelperBundle\\' => array($vendorDir . '/iknsa/helper-bundle'),
-    'IKNSA\\Components\\' => array($vendorDir . '/iknsa/components'),
-    'Bnpparibas\\Router\\' => array($vendorDir . '/bnpparibas/router'),
-    'Bnpparibas\\Helpers\\' => array($vendorDir . '/bnpparibas/helpers'),
     '' => array($baseDir . '/src'),
 );

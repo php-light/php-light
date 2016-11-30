@@ -17,15 +17,15 @@ class ComposerStaticInit475cdc6e606f7133e879da8663e55663
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
         ),
+        'R' => 
+        array (
+            'Romenys\\Router\\' => 15,
+            'Romenys\\Helpers\\' => 16,
+            'Romenys\\Components\\' => 19,
+        ),
         'I' => 
         array (
             'IKNSA\\HelperBundle\\' => 19,
-            'IKNSA\\Components\\' => 17,
-        ),
-        'B' => 
-        array (
-            'Bnpparibas\\Router\\' => 18,
-            'Bnpparibas\\Helpers\\' => 19,
         ),
     );
 
@@ -38,21 +38,21 @@ class ComposerStaticInit475cdc6e606f7133e879da8663e55663
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
+        'Romenys\\Router\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/romenys/router',
+        ),
+        'Romenys\\Helpers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/romenys/helpers',
+        ),
+        'Romenys\\Components\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/romenys/components',
+        ),
         'IKNSA\\HelperBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/iknsa/helper-bundle',
-        ),
-        'IKNSA\\Components\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/iknsa/components',
-        ),
-        'Bnpparibas\\Router\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/bnpparibas/router',
-        ),
-        'Bnpparibas\\Helpers\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/bnpparibas/helpers',
         ),
     );
 

@@ -61,109 +61,6 @@
         ]
     },
     {
-        "name": "symfony/var-dumper",
-        "version": "v3.1.7",
-        "version_normalized": "3.1.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/var-dumper.git",
-            "reference": "0c2d613e890e33f4da810159ac97931068f5bd17"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/0c2d613e890e33f4da810159ac97931068f5bd17",
-            "reference": "0c2d613e890e33f4da810159ac97931068f5bd17",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.5.9",
-            "symfony/polyfill-mbstring": "~1.0"
-        },
-        "require-dev": {
-            "twig/twig": "~1.20|~2.0"
-        },
-        "suggest": {
-            "ext-symfony_debug": ""
-        },
-        "time": "2016-11-03 08:04:31",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.1-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "Resources/functions/dump.php"
-            ],
-            "psr-4": {
-                "Symfony\\Component\\VarDumper\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Nicolas Grekas",
-                "email": "p@tchwork.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony mechanism for exploring and dumping PHP variables",
-        "homepage": "https://symfony.com",
-        "keywords": [
-            "debug",
-            "dump"
-        ]
-    },
-    {
-        "name": "bnpparibas/helpers",
-        "version": "0.0.3-stable",
-        "version_normalized": "0.0.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/bnpparibas/Helpers.git",
-            "reference": "ffc6b79f4568b0fb1180501b2c950dd97f1d2610"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/bnpparibas/Helpers/zipball/ffc6b79f4568b0fb1180501b2c950dd97f1d2610",
-            "reference": "ffc6b79f4568b0fb1180501b2c950dd97f1d2610",
-            "shasum": ""
-        },
-        "require": {
-            "bnpparibas/helpers": "0.0.3"
-        },
-        "time": "2016-11-29 21:40:51",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Bnpparibas\\Helpers\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "authors": [
-            {
-                "name": "Khalid Sookia",
-                "email": "khalidsookia@gmail.com"
-            }
-        ],
-        "description": "PHP helpers"
-    },
-    {
         "name": "iknsa/helper-bundle",
         "version": "0.0.2-stable",
         "version_normalized": "0.0.2.0",
@@ -205,26 +102,99 @@
         "description": "A few helpers and utilities in php"
     },
     {
-        "name": "bnpparibas/router",
-        "version": "0.0.2-stable",
-        "version_normalized": "0.0.2.0",
+        "name": "romenys/components",
+        "version": "0.0.1-stable",
+        "version_normalized": "0.0.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/bnpparibas/router.git",
-            "reference": "8a094e82ea1230dbeefe66aec16a0bd00012d5a6"
+            "url": "https://github.com/romenys/components.git",
+            "reference": "ac745e2c86dc143bab1b2b5c420ffcb438b79912"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/bnpparibas/router/zipball/8a094e82ea1230dbeefe66aec16a0bd00012d5a6",
-            "reference": "8a094e82ea1230dbeefe66aec16a0bd00012d5a6",
+            "url": "https://api.github.com/repos/romenys/components/zipball/ac745e2c86dc143bab1b2b5c420ffcb438b79912",
+            "reference": "ac745e2c86dc143bab1b2b5c420ffcb438b79912",
             "shasum": ""
         },
-        "time": "2016-11-30 01:09:56",
+        "require": {
+            "php": ">=5.4"
+        },
+        "time": "2016-11-30 16:18:56",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
-                "Bnpparibas\\Router\\": ""
+                "Romenys\\Components\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Khalid Sookia",
+                "email": "khalidsookia@gmail.com"
+            }
+        ],
+        "description": "Some PHP components like parameters.ini parser with dynamic environments specific parmeters"
+    },
+    {
+        "name": "romenys/helpers",
+        "version": "0.0.1-stable",
+        "version_normalized": "0.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/romenys/helpers.git",
+            "reference": "b0a2981eb8d3980deaced2d5c2898d0b53e5119d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/romenys/helpers/zipball/b0a2981eb8d3980deaced2d5c2898d0b53e5119d",
+            "reference": "b0a2981eb8d3980deaced2d5c2898d0b53e5119d",
+            "shasum": ""
+        },
+        "time": "2016-11-30 15:17:15",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Romenys\\Helpers\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Khalid Sookia",
+                "email": "khalidsookia@gmail.com"
+            }
+        ],
+        "description": "PHP helpers"
+    },
+    {
+        "name": "romenys/router",
+        "version": "0.0.1-stable",
+        "version_normalized": "0.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/romenys/router.git",
+            "reference": "ab208e29e4d4f017f538ac026daf712ed5913d80"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/romenys/router/zipball/ab208e29e4d4f017f538ac026daf712ed5913d80",
+            "reference": "ab208e29e4d4f017f538ac026daf712ed5913d80",
+            "shasum": ""
+        },
+        "time": "2016-11-30 15:15:22",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Romenys\\Router\\": ""
             },
             "exclude-from-classmap": [
                 "/Tests/"
@@ -238,5 +208,70 @@
             }
         ],
         "description": "A PHP router library"
+    },
+    {
+        "name": "symfony/var-dumper",
+        "version": "v3.2.0",
+        "version_normalized": "3.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/var-dumper.git",
+            "reference": "86f4e8aeb07bd5fb467f6bdd599a30298d19fa5f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/86f4e8aeb07bd5fb467f6bdd599a30298d19fa5f",
+            "reference": "86f4e8aeb07bd5fb467f6bdd599a30298d19fa5f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.9",
+            "symfony/polyfill-mbstring": "~1.0"
+        },
+        "require-dev": {
+            "twig/twig": "~1.20|~2.0"
+        },
+        "suggest": {
+            "ext-symfony_debug": ""
+        },
+        "time": "2016-11-29 10:33:09",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "Resources/functions/dump.php"
+            ],
+            "psr-4": {
+                "Symfony\\Component\\VarDumper\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony mechanism for exploring and dumping PHP variables",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "debug",
+            "dump"
+        ]
     }
 ]

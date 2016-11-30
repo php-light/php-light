@@ -1,0 +1,17 @@
+{
+    "route": {
+        "homepage": {
+            "path": "/",
+            "controller": "Bnpparibas\\Cardif\\ModifAdministrativesBddfCardifBundle\\Controller\\ModifAdministrativesBddfCardifController",
+            "action": "homepage"
+        },
+        "form": {
+            "path": "/form",
+            "controller": "Bnpparibas\\Cardif\\ModifAdministrativesBddfCardifBundle\\Controller\\ModifAdministrativesBddfCardifController",
+            "action": "form"
+        }
+    },
+  "file": {
+    "RefogAuthentification": "src/Bnpparibas/RefogAuthentification/Resources/config/routing.json"
+  }
+}

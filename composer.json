@@ -9,14 +9,14 @@
     ],
     "autoload": {
         "psr-4": {
-            "": "src/",
-            "IKNSA\\Components\\": "vendor/iknsa/components"
+            "": "src/"
         }
     },
     "require": {
         "symfony/var-dumper": "^3.1",
-        "bnpparibas/helpers": "^0.0.3",
         "iknsa/helper-bundle": "^0.0.2",
-        "bnpparibas/router": "0.0.2-stable"
+        "romenys/components": "^0.0.1",
+        "romenys/helpers": "^0.0.1",
+        "romenys/router": "^0.0.1"
     }
 }
