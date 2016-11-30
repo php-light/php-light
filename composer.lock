@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2c079100c0b652ab9e83f459ae2ed52a",
-    "content-hash": "25bf33cf063ccfc1b30bcf46b0f3b660",
+    "hash": "06bdb2025a344173d4aed45d7bbf0acb",
+    "content-hash": "c377feef6b2c19e014257bcd785ad03e",
     "packages": [
         {
             "name": "bnpparibas/helpers",
@@ -42,6 +42,39 @@
             ],
             "description": "PHP helpers",
             "time": "2016-11-29 21:40:51"
+        },
+        {
+            "name": "bnpparibas/router",
+            "version": "0.0.2-stable",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bnpparibas/router.git",
+                "reference": "8a094e82ea1230dbeefe66aec16a0bd00012d5a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bnpparibas/router/zipball/8a094e82ea1230dbeefe66aec16a0bd00012d5a6",
+                "reference": "8a094e82ea1230dbeefe66aec16a0bd00012d5a6",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bnpparibas\\Router\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Khalid Sookia",
+                    "email": "khalidsookia@gmail.com"
+                }
+            ],
+            "description": "A PHP router library",
+            "time": "2016-11-30 01:09:56"
         },
         {
             "name": "iknsa/helper-bundle",

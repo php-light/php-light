@@ -203,5 +203,40 @@
             }
         ],
         "description": "A few helpers and utilities in php"
+    },
+    {
+        "name": "bnpparibas/router",
+        "version": "0.0.2-stable",
+        "version_normalized": "0.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bnpparibas/router.git",
+            "reference": "8a094e82ea1230dbeefe66aec16a0bd00012d5a6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bnpparibas/router/zipball/8a094e82ea1230dbeefe66aec16a0bd00012d5a6",
+            "reference": "8a094e82ea1230dbeefe66aec16a0bd00012d5a6",
+            "shasum": ""
+        },
+        "time": "2016-11-30 01:09:56",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Bnpparibas\\Router\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Khalid Sookia",
+                "email": "khalidsookia@gmail.com"
+            }
+        ],
+        "description": "A PHP router library"
     }
 ]

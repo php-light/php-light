@@ -17,11 +17,9 @@ include_once "parameters/parameters.php";
 if (file_exists(__DIR__ . "/parameters/" . $environment .".php"))
     include_once __DIR__ . "/parameters/" . $environment .".php";
 
-
 if (isset($$environment)) $globalParameters = array_merge($parameters, $$environment);
 else $globalParameters = $parameters;
 
-dump($globalParameters);
-
-$url = new \IKNSA\HelperBundle\Util\Url("http://modifsadmi.bnpparibas.dev/index.php");
-dump($url);
+$router = new Bnpparibas\Router\Util\GetRoutingFiles();
+dump($router->getFiles());
+dump($router->getRoutes());

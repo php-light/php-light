@@ -6,3 +6,6 @@
  * Time: 14:05
  */
 
+class AppKernel
+{
+}

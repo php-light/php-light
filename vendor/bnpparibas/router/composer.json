@@ -1,6 +1,6 @@
 {
-    "name": "bnpparibas/helpers",
-    "description": "PHP helpers",
+    "name": "bnpparibas/router",
+    "description": "A PHP router library",
     "type": "library",
     "require": {
     },
@@ -11,10 +11,9 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Bnpparibas\\Helpers\\": "" },
+        "psr-4": { "Bnpparibas\\Router\\": "" },
         "exclude-from-classmap": [
             "/Tests/"
         ]
-    },
-    "minimum-stability": "stable"
+    }
 }
