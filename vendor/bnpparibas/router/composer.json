@@ -1,5 +1,5 @@
 {
-    "name": "bnpparibas/router",
+    "name": "he-concord/router",
     "description": "A PHP router library",
     "type": "library",
     "require": {
@@ -11,7 +11,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Bnpparibas\\Router\\": "" },
+        "psr-4": { "He\\Router\\": "" },
         "exclude-from-classmap": [
             "/Tests/"
         ]

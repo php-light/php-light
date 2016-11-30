@@ -1,5 +1,5 @@
 {
-    "name": "bnpparibas/helpers",
+    "name": "he-concord/helpers",
     "description": "PHP helpers",
     "type": "library",
     "require": {

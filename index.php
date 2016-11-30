@@ -8,6 +8,4 @@
 
 require 'vendor/autoload.php';
 
-require_once "app/config/parameters.php";
-
 require_once "app/AppKernel.php";

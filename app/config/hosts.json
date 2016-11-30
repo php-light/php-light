@@ -1,0 +1,14 @@
+{
+    "PROD": {
+    },
+
+    "REC": {},
+
+    "INT": {},
+
+    "DEV": {
+      "0": "modifsadmi.bnpparibas.dev",
+      "1": "modifsadmi.dev.bnpparibas",
+      "2": "localhost"
+    }
+}

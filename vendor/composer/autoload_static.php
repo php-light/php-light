@@ -20,6 +20,7 @@ class ComposerStaticInit475cdc6e606f7133e879da8663e55663
         'I' => 
         array (
             'IKNSA\\HelperBundle\\' => 19,
+            'IKNSA\\Components\\' => 17,
         ),
         'B' => 
         array (
@@ -40,6 +41,10 @@ class ComposerStaticInit475cdc6e606f7133e879da8663e55663
         'IKNSA\\HelperBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/iknsa/helper-bundle',
+        ),
+        'IKNSA\\Components\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/iknsa/components',
         ),
         'Bnpparibas\\Router\\' => 
         array (

@@ -23,7 +23,7 @@ class GetEnvironmentByHostName
 
     public function setHosts()
     {
-        $this->hosts = parse_ini_file(__DIR__ . '/../../../app/config/hosts.ini', true);
+        $this->hosts = json_decode(file_get_contents(__DIR__ . "/../../../app/config/hosts.json"), true);
 
         return $this;
     }
@@ -48,7 +48,7 @@ class GetEnvironmentByHostName
     public function checkHostForEnv()
     {
         foreach ($this->getHosts() as $env => $hosts) {
-            if (isset($hosts["host"]) && in_array($_SERVER["SERVER_NAME"], $hosts["host"])) {
+            if (in_array($_SERVER["SERVER_NAME"], $hosts)) {
                 $this->setEnv($env);
             }
         }
@@ -62,6 +62,3 @@ class GetEnvironmentByHostName
         return $this;
     }
 }
-
-$environment = new GetEnvironmentByHostName();
-$environment->getEnv();
