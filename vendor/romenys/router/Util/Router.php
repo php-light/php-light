@@ -23,7 +23,7 @@ class Router
         $this->getRoutingFiles();
     }
 
-    public function getRoutingFiles($files = null)
+    private function getRoutingFiles($files = null)
     {
         if ($files === null) {
             $files = json_decode(file_get_contents("app/config/routing.json"), true);

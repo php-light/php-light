@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "60729696f1556e917010683120671fa4",
-    "content-hash": "57132d715e80678439190ab56ce53154",
+    "hash": "b8484e83ea13415ffb002b86241b2468",
+    "content-hash": "51991173b3de30d9cd2a00e61741db6e",
     "packages": [
         {
             "name": "iknsa/helper-bundle",
@@ -111,6 +111,42 @@
             ],
             "description": "PHP helpers",
             "time": "2016-11-30 15:17:15"
+        },
+        {
+            "name": "romenys/http",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/romenys/http.git",
+                "reference": "71dcb4a61c1786d50e653f89f0ceaf926776ef8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/romenys/http/zipball/71dcb4a61c1786d50e653f89f0ceaf926776ef8a",
+                "reference": "71dcb4a61c1786d50e653f89f0ceaf926776ef8a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Romenys\\Http\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Khalid Sookia",
+                    "email": "khalidsookia@gmail.com"
+                }
+            ],
+            "description": "PHP library for handling http request and response",
+            "time": "2016-11-30 18:12:42"
         },
         {
             "name": "romenys/router",
@@ -275,7 +311,8 @@
         "iknsa/helper-bundle": 20,
         "romenys/components": 20,
         "romenys/helpers": 20,
-        "romenys/router": 20
+        "romenys/router": 20,
+        "romenys/http": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

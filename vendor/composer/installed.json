@@ -270,5 +270,43 @@
             }
         ],
         "description": "A PHP router library"
+    },
+    {
+        "name": "romenys/http",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/romenys/http.git",
+            "reference": "71dcb4a61c1786d50e653f89f0ceaf926776ef8a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/romenys/http/zipball/71dcb4a61c1786d50e653f89f0ceaf926776ef8a",
+            "reference": "71dcb4a61c1786d50e653f89f0ceaf926776ef8a",
+            "shasum": ""
+        },
+        "time": "2016-11-30 18:12:42",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Romenys\\Http\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Khalid Sookia",
+                "email": "khalidsookia@gmail.com"
+            }
+        ],
+        "description": "PHP library for handling http request and response"
     }
 ]

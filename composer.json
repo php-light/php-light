@@ -17,6 +17,7 @@
         "iknsa/helper-bundle": "@dev",
         "romenys/components": "@dev",
         "romenys/helpers": "@dev",
-        "romenys/router": "@dev"
+        "romenys/router": "@dev",
+        "romenys/http": "@dev"
     }
 }
