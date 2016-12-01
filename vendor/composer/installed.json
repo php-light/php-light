@@ -308,5 +308,40 @@
             }
         ],
         "description": "PHP library for handling http request and response"
+    },
+    {
+        "name": "romenys/framework",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/romenys/framework.git",
+            "reference": "a8b793577a404fb00640961c4cbb9409775c0f0f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/romenys/framework/zipball/a8b793577a404fb00640961c4cbb9409775c0f0f",
+            "reference": "a8b793577a404fb00640961c4cbb9409775c0f0f",
+            "shasum": ""
+        },
+        "time": "2016-12-01 14:46:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Romenys\\Framework\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Khalid Sookia",
+                "email": "khalidsookia@gmail.com"
+            }
+        ],
+        "description": "The libraries required to run romenys core"
     }
 ]

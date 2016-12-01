@@ -2,7 +2,7 @@
     "route": {
         "homepage": {
             "path": "/",
-            "controller": "Bnpparibas\\Cardif\\ModifAdministrativesBddfCardifBundle\\Controller\\ModifAdministrativesBddfCardifController",
+            "controller": "Bnpparibas\\Cardif\\ModifAdministrativesBddfCardifBundle\\Controller\\ModifAdministrativesBddfCardif",
             "action": "homepage"
         },
         "form": {

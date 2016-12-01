@@ -6,13 +6,15 @@
  * Time: 23:32
  */
 
-namespace Bnpparibas\Bnpparibas\Cardif\ModifAdministrativesBddfCardifBundle\Controller;
+namespace Bnpparibas\Cardif\ModifAdministrativesBddfCardifBundle\Controller;
 
 
-class ModifAdministrativesBddfCardifController
+use Romenys\Framework\Controller\Controller;
+
+class ModifAdministrativesBddfCardifController extends Controller
 {
-    public function homepageAction()
+    public function homepageAction($request)
     {
-        dump("homepageAction");
+        dump($request);
     }
 }

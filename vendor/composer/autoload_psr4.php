@@ -11,6 +11,7 @@ return array(
     'Romenys\\Router\\' => array($vendorDir . '/romenys/router'),
     'Romenys\\Http\\' => array($vendorDir . '/romenys/http'),
     'Romenys\\Helpers\\' => array($vendorDir . '/romenys/helpers'),
+    'Romenys\\Framework\\' => array($vendorDir . '/romenys/framework'),
     'Romenys\\Components\\' => array($vendorDir . '/romenys/components'),
     'IKNSA\\HelperBundle\\' => array($vendorDir . '/iknsa/helper-bundle'),
     '' => array($baseDir . '/src'),

@@ -18,6 +18,7 @@
         "romenys/components": "@dev",
         "romenys/helpers": "@dev",
         "romenys/router": "@dev",
-        "romenys/http": "@dev"
+        "romenys/http": "@dev",
+        "romenys/framework": "@dev"
     }
 }

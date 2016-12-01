@@ -22,6 +22,7 @@ class ComposerStaticInit449aa16fe942ccec471d4ad2646a7258
             'Romenys\\Router\\' => 15,
             'Romenys\\Http\\' => 13,
             'Romenys\\Helpers\\' => 16,
+            'Romenys\\Framework\\' => 18,
             'Romenys\\Components\\' => 19,
         ),
         'I' => 
@@ -50,6 +51,10 @@ class ComposerStaticInit449aa16fe942ccec471d4ad2646a7258
         'Romenys\\Helpers\\' => 
         array (
             0 => __DIR__ . '/..' . '/romenys/helpers',
+        ),
+        'Romenys\\Framework\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/romenys/framework',
         ),
         'Romenys\\Components\\' => 
         array (
