@@ -16,17 +16,15 @@ use Romenys\Http\Response\JsonResponse;
 
 class ModifAdministrativesBddfCardifController extends Controller
 {
-    private $urlGenerator;
-
     public function __construct()
     {
     }
 
     public function homepageAction(Request $request)
     {
-        $this->urlGenerator = new UrlGenerator($request);
+        $urlGenerator = new UrlGenerator($request);
 
-        return new JsonResponse(['form' => $this->urlGenerator->absolute("form")], [JSON_UNESCAPED_SLASHES]);
+        return new JsonResponse(['form' => $urlGenerator->absolute("form")], [JSON_UNESCAPED_SLASHES]);
     }
 
     public function formAction(Request $request)
@@ -40,8 +38,5 @@ class ModifAdministrativesBddfCardifController extends Controller
 
     public function defaultAction(Request $request)
     {
-        $this->urlGenerator = new UrlGenerator($request);
-
-        return new JsonResponse(['form' => $request->getGet()]);
     }
 }
