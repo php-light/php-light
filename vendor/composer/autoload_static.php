@@ -19,6 +19,7 @@ class ComposerStaticInit449aa16fe942ccec471d4ad2646a7258
         ),
         'R' => 
         array (
+            'Romenys\\app\\' => 12,
             'Romenys\\Router\\' => 15,
             'Romenys\\Http\\' => 13,
             'Romenys\\Helpers\\' => 16,
@@ -39,6 +40,10 @@ class ComposerStaticInit449aa16fe942ccec471d4ad2646a7258
         'Symfony\\Component\\VarDumper\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'Romenys\\app\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
         'Romenys\\Router\\' => 
         array (

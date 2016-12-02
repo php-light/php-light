@@ -11,6 +11,8 @@ namespace Bnpparibas\Cardif\ModifAdministrativesBddfCardifBundle\Controller;
 
 use Romenys\Framework\Components\UrlGenerator;
 use Romenys\Framework\Controller\Controller;
+use Romenys\Http\Request\Request;
+use Romenys\Http\Response\JsonResponse;
 
 class ModifAdministrativesBddfCardifController extends Controller
 {
@@ -20,11 +22,26 @@ class ModifAdministrativesBddfCardifController extends Controller
     {
     }
 
-    public function homepageAction($request)
+    public function homepageAction(Request $request)
     {
         $this->urlGenerator = new UrlGenerator($request);
-        dump($request);
-        dump($this->urlGenerator->relative("homepage"));
-        dump($this->urlGenerator->absolute("form"));
+
+        return new JsonResponse(['form' => $this->urlGenerator->absolute("form")], [JSON_UNESCAPED_SLASHES]);
+    }
+
+    public function formAction(Request $request)
+    {
+        return new JsonResponse([
+            'post' => $request->getPost(),
+            'get' => $request->getGet(),
+            'session' => $request->getSession()
+        ]);
+    }
+
+    public function defaultAction(Request $request)
+    {
+        $this->urlGenerator = new UrlGenerator($request);
+
+        return new JsonResponse(['form' => $request->getGet()]);
     }
 }

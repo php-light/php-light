@@ -7,8 +7,13 @@
         },
         "form": {
             "path": "/form",
-            "controller": "Bnpparibas\\Cardif\\ModifAdministrativesBddfCardifBundle\\Controller\\ModifAdministrativesBddfCardifController",
+            "controller": "Bnpparibas\\Cardif\\ModifAdministrativesBddfCardifBundle\\Controller\\ModifAdministrativesBddfCardif",
             "action": "form"
+        },
+        "default": {
+            "path": "/",
+            "controller": "Bnpparibas\\Cardif\\ModifAdministrativesBddfCardifBundle\\Controller\\ModifAdministrativesBddfCardif",
+            "action": "default"
         }
     },
   "file": {

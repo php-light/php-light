@@ -1,0 +1,22 @@
+{
+  "name": "romenys",
+  "homepage": "https://github.com/romenys/romenys",
+  "authors": [
+    "Khalid Sookia <khalidsookia@gmail.com>"
+  ],
+  "description": "Front ent dependencies for romenys framework",
+  "main": "web/app/app.js",
+  "keywords": [
+    "romenys",
+    "front",
+    "end",
+    "framework"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular-route": "^1.5.9",
+    "angular-sanitize": "^1.5.9",
+    "angular": "1.5.9",
+    "bootstrap": "^3.3.7"
+  }
+}
