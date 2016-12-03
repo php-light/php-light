@@ -10,6 +10,10 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: 'web/app/templates/form.html',
             controller: 'FormController'
         })
+        .when('/user/new', {
+            templateUrl: 'web/app/templates/new-user.html',
+            controller: 'UserController'
+        })
         // .otherwise({
         //     redirectTo: '/error/404'
         // });
