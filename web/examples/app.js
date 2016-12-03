@@ -10,7 +10,7 @@ var app = angular.module('app',
 app.controller('DefaultController', ['$http', function ($http) {
     console.log('DefaultController');
 
-    this.getGoogle = $http({
+    this.default = $http({
         method: 'GET',
         url: '/app.php?route=default'
     })
@@ -71,4 +71,19 @@ app.controller('UserController', ['$scope', '$http', function ($scope, $http) {
             console.log('Error status: ' + response.status);
         });
     };
+}]);
+
+app.controller('UserListController', ['$scope', '$http', function ($scope, $http) {
+    $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+
+    console.log('UserListController');
+
+    $scope.users = {};
+
+    $http.get('/app.php?route=user_list')
+        .then(function (response) {
+            $scope.users = response.data.users;
+        }, function (response) {
+            console.log(response.status);
+        });
 }]);

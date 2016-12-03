@@ -4,24 +4,9 @@
             "path": "/",
             "controller": "Bnpparibas\\Cardif\\ModifAdministrativesBddfCardifBundle\\Controller\\ModifAdministrativesBddfCardif",
             "action": "homepage"
-        },
-        "form": {
-            "path": "/form",
-            "controller": "Bnpparibas\\Cardif\\ModifAdministrativesBddfCardifBundle\\Controller\\ModifAdministrativesBddfCardif",
-            "action": "form"
-        },
-        "user_new": {
-            "path": "/user_new",
-            "controller": "Bnpparibas\\Cardif\\ModifAdministrativesBddfCardifBundle\\Controller\\ModifAdministrativesBddfCardif",
-            "action": "new"
-        },
-        "default": {
-            "path": "/",
-            "controller": "Bnpparibas\\Cardif\\ModifAdministrativesBddfCardifBundle\\Controller\\ModifAdministrativesBddfCardif",
-            "action": "default"
         }
     },
-  "file": {
-    "RefogAuthentification": "src/Bnpparibas/RefogAuthentification/Resources/config/routing.json"
-  }
+    "file": {
+      "RefogAuthentification": "src/Bnpparibas/RefogAuthentification/Resources/config/routing.json"
+    }
 }

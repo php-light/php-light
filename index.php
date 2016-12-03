@@ -14,9 +14,9 @@
     <script src="web/vendor/ng-file-upload-shim/ng-file-upload-shim.min.js"></script>
     <script src="web/vendor/ng-file-upload/ng-file-upload.min.js"></script>
 
-    <script src="web/app/app.js"></script>
+    <script src="web/examples/app.js"></script>
 
-    <script src="web/app/scripts/config/config.js"></script>
+    <script src="web/examples/scripts/config/config.js"></script>
 </head>
 <body>
 <ng-view></ng-view>

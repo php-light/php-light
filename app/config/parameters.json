@@ -1,8 +1,11 @@
 {
     "siteRoot": "index.php",
     "email": "khalidsookia@gmail.com",
+    "db_driver": "pdo_mysql",
     "db_port": 3306,
-    "db_name": "",
-    "db_host": "",
-    "db_pass": ""
+    "db_name": "modifcardif",
+    "db_host": "localhost",
+    "db_user": "root",
+    "db_pass": "",
+    "debug": false
 }

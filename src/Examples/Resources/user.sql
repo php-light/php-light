@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS `modifcardif`;
+
+USE `modifcardif`;
+
+CREATE TABLE IF NOT EXISTS `modifcardif`.`user` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) NOT NULL DEFAULT '',
+  `email` VARCHAR(50) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+)ENGINE = InnoDB;

@@ -1,0 +1,29 @@
+{
+    "route": {
+        "homepage": {
+            "path": "/",
+            "controller": "Examples\\Controller\\Examples",
+            "action": "homepage"
+        },
+        "form": {
+            "path": "/form",
+            "controller": "Examples\\Controller\\Examples",
+            "action": "form"
+        },
+        "user_list": {
+            "path": "/users",
+            "controller": "Examples\\Controller\\Examples",
+            "action": "list"
+        },
+        "user_new": {
+            "path": "/user/new",
+            "controller": "Examples\\Controller\\Examples",
+            "action": "new"
+        },
+        "default": {
+            "path": "/",
+            "controller": "Examples\\Controller\\Examples",
+            "action": "default"
+        }
+    }
+}
