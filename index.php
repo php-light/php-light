@@ -11,6 +11,8 @@
     <script src="web/vendor/angular/angular.min.js"></script>
     <script src="web/vendor/angular-sanitize/angular-sanitize.js"></script>
     <script src="web/vendor/angular-route/angular-route.min.js"></script>
+    <script src="web/vendor/ng-file-upload-shim/ng-file-upload-shim.min.js"></script>
+    <script src="web/vendor/ng-file-upload/ng-file-upload.min.js"></script>
 
     <script src="web/app/app.js"></script>
 

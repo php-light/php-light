@@ -32,6 +32,8 @@ class ModifAdministrativesBddfCardifController extends Controller
         return new JsonResponse([
             'post' => $request->getPost(),
             'get' => $request->getGet(),
+            'file' => $request->getOneFile('user', 'avatar'),
+            'files' => $request->getFiles(),
             'session' => $request->getSession()
         ]);
     }
