@@ -11,6 +11,7 @@ namespace Bnpparibas\Cardif\ModifAdministrativesBddfCardifBundle\Controller;
 
 use Romenys\Framework\Components\UrlGenerator;
 use Romenys\Framework\Controller\Controller;
+use Romenys\Helpers\UploadFile;
 use Romenys\Http\Request\Request;
 use Romenys\Http\Response\JsonResponse;
 
@@ -30,6 +31,7 @@ class ModifAdministrativesBddfCardifController extends Controller
     public function formAction(Request $request)
     {
         return new JsonResponse([
+            'uploadedFiles' => $request->getUploadedFiles(),
             'post' => $request->getPost(),
             'get' => $request->getGet(),
             'file' => $request->getOneFile('user', 'avatar'),

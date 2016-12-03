@@ -2,3 +2,5 @@
 Would skip repository vendor/romenys/http/
 
 web/vendor/
+web/uploads/*
+!web/uploads/.gitkeep
