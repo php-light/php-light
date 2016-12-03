@@ -30,6 +30,8 @@ class ModifAdministrativesBddfCardifController extends Controller
 
     public function formAction(Request $request)
     {
+        $request->uploadFiles();
+
         return new JsonResponse([
             'uploadedFiles' => $request->getUploadedFiles(),
             'post' => $request->getPost(),
