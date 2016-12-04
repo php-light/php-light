@@ -1,6 +1,8 @@
 .idea/
 Would skip repository vendor/romenys/http/
 
+/vendor/
+
 web/vendor/
 web/uploads/*
 !web/uploads/.gitkeep
