@@ -13,10 +13,6 @@ use Romenys\Http\Request\Request;
 
 class ModifAdministrativesBddfCardifController extends Controller
 {
-    public function __construct()
-    {
-    }
-
     public function homepageAction(Request $request)
     {
     }

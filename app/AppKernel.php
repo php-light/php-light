@@ -16,6 +16,7 @@ class AppKernel
     {
         if (!session_start()) throw new RuntimeException("We were unable to start a session", 403);
 
+        // Hack for Angular POST as PHP does not desirialize json natively
         $_POST = empty($_POST) ? $_POST = empty(json_decode(file_get_contents('php://input'),true)) ? $_POST : json_decode(file_get_contents('php://input'),true) : $_POST;
 
         $request = new HandleRequest($_GET, $_POST, $_COOKIE, $_FILES, $_ENV, $_SESSION, $_SERVER);

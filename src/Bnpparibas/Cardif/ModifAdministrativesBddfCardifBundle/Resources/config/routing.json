@@ -7,6 +7,5 @@
         }
     },
     "file": {
-      "RefogAuthentification": "src/Bnpparibas/RefogAuthentification/Resources/config/routing.json"
     }
 }

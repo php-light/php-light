@@ -7,6 +7,54 @@ var app = angular.module('app',
     }
 );
 
+app.controller('UserShowController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+    console.log('UserShowController');
+    console.log($routeParams);
+
+    $http.get('/app.php?route=user_show&id=' + $routeParams.id)
+        .then(function (response) {
+            $scope.user = response.data.user;
+        }, function (response) {
+            console.log(response.status);
+        });
+}]);
+
+app.controller('UserController', ['$scope', '$http', function ($scope, $http) {
+    $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+
+    console.log('UserController');
+
+    $scope.user = {
+        name: 'test Test',
+        email: 'test@mail.com'
+    };
+
+    $scope.submit = function (user) {
+        console.log(user);
+        $http.post('/app.php?route=user_new', user)
+            .then(function (response) {
+                console.log(response);
+            }, function (response) {
+                console.log('Error status: ' + response.status);
+            });
+    };
+}]);
+
+app.controller('UserListController', ['$scope', '$http', function ($scope, $http) {
+    $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+
+    console.log('UserListController');
+
+    $scope.users = {};
+
+    $http.get('/app.php?route=user_list')
+        .then(function (response) {
+            $scope.users = response.data.users;
+        }, function (response) {
+            console.log(response.status);
+        });
+}]);
+
 app.controller('DefaultController', ['$http', function ($http) {
     console.log('DefaultController');
 
@@ -50,40 +98,4 @@ app.controller('FormController', ['$scope', '$http', 'Upload', function ($scope,
             console.log('progress: ' + progressPercentage + '% ' + evt.config.data.user.avatar);
         });
     };
-}]);
-
-app.controller('UserController', ['$scope', '$http', function ($scope, $http) {
-    $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
-
-    console.log('UserController');
-
-    $scope.user = {
-        name: 'test',
-        email: 'test'
-    };
-
-    $scope.submit = function (user) {
-        console.log(user);
-        $http.post('/app.php?route=user_new', user)
-        .then(function (response) {
-            console.log(response);
-        }, function (response) {
-            console.log('Error status: ' + response.status);
-        });
-    };
-}]);
-
-app.controller('UserListController', ['$scope', '$http', function ($scope, $http) {
-    $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
-
-    console.log('UserListController');
-
-    $scope.users = {};
-
-    $http.get('/app.php?route=user_list')
-        .then(function (response) {
-            $scope.users = response.data.users;
-        }, function (response) {
-            console.log(response.status);
-        });
 }]);

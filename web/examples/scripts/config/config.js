@@ -1,6 +1,6 @@
 'use strict';
 
-app.config(function($routeProvider, $locationProvider) {
+app.config(function($routeProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'web/examples/templates/default.html',
@@ -18,10 +18,12 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: 'web/examples/templates/users.html',
             controller: 'UserListController'
         })
+        .when('/user/:id', {
+            templateUrl: 'web/examples/templates/user-show.html',
+            controller: 'UserShowController'
+        })
         // .otherwise({
         //     redirectTo: '/error/404'
         // });
     ;
-
-    $locationProvider.html5Mode(false);
 });

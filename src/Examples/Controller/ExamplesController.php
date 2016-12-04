@@ -8,7 +8,7 @@
 
 namespace Examples\Controller;
 
-use Bnpparibas\Cardif\ModifAdministrativesBddfCardifBundle\Entity\User;
+use Examples\Entity\User;
 use Romenys\Framework\Components\DB\DB;
 use Romenys\Framework\Components\UrlGenerator;
 use Romenys\Framework\Controller\Controller;
@@ -20,7 +20,7 @@ class ExamplesController extends Controller
     public function listAction()
     {
         $db = new DB();
-        $db = $db->get();
+        $db = $db->connect();
 
         $request = $db->query("SELECT * FROM `user`");
         $users = $request->fetchAll($db::FETCH_ASSOC);
@@ -33,8 +33,34 @@ class ExamplesController extends Controller
         $user = new User($request->getPost());
 
         $db = new DB();
-        $db = $db->get();
-        $db->exec("INSERT INTO `modifcardif`.`user` (name, email) VALUES ($user->getName(), $user->getEmail())");
+        $db = $db->connect();
+
+        $query = $db->prepare("INSERT INTO `modifcardif`.`user` (`name`, `email`) VALUES (:name, :email)");
+
+        $query->bindValue(":name", $user->getName());
+        $query->bindValue(":email", $user->getEmail());
+
+        $query->execute();
+
+        return new JsonResponse([
+            "user" => [
+                "name" => $user->getName(),
+                "email" => $user->getEmail()
+            ]
+        ]);
+    }
+
+    public function showAction(Request $request)
+    {
+        $params = $request->getGet();
+        $id = $params["id"];
+
+        $db = new DB();
+        $db = $db->connect();
+
+        $user = $db->query("SELECT * FROM `user` WHERE id = " . $id)->fetch($db::FETCH_ASSOC);
+
+        $user = new User($user);
 
         return new JsonResponse([
             "user" => [

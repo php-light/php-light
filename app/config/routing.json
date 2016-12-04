@@ -1,6 +1,7 @@
 {
     "file": {
-        "ModifAdministrativesBddfCardifBundle": "src/Bnpparibas/Cardif/ModifAdministrativesBddfCardifBundle/Resources/config/routing.json",
-        "Examples": "src/Examples/Resources/config/routing.json"
+        "Examples": "src/Examples/Resources/config/routing.json",
+        "RefogAuthentification": "src/Bnpparibas/RefogAuthentification/Resources/config/routing.json",
+        "ModifAdministrativesBddfCardifBundle": "src/Bnpparibas/Cardif/ModifAdministrativesBddfCardifBundle/Resources/config/routing.json"
     }
 }

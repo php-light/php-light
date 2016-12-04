@@ -6,16 +6,30 @@
  * Time: 17:08
  */
 
-namespace Bnpparibas\Cardif\ModifAdministrativesBddfCardifBundle\Entity;
+namespace Examples\Entity;
 
 
 use Romenys\Framework\Components\Model;
 
 class User extends Model
 {
+    private $id;
+
     private $name;
 
     private $email;
+
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
 
     public function setName($name)
     {
