@@ -43,7 +43,7 @@ class ExamplesController extends Controller
         $db = new DB();
         $db = $db->connect();
 
-        $query = $db->prepare("INSERT INTO `modifcardif`.`user` (`name`, `email`, `avatar`) VALUES (:name, :email, :avatar)");
+        $query = $db->prepare("INSERT INTO `user` (`name`, `email`, `avatar`) VALUES (:name, :email, :avatar)");
 
         $query->bindValue(":name", $user->getName());
         $query->bindValue(":email", $user->getEmail());
