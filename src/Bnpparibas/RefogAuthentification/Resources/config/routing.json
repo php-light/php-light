@@ -1,9 +1,0 @@
-{
-    "route": {
-        "authentification": {
-            "path": "/login",
-            "controller": "Bnpparibas\\RefogAuthentification\\Controller\\ModifAdministrativesBddfCardifController",
-            "action": "login"
-        }
-    }
-}

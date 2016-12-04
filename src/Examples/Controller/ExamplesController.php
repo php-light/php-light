@@ -33,6 +33,11 @@ class ExamplesController extends Controller
         $request->uploadFiles();
 
         $user = new User($request->getPost()["user"]);
+
+        /*
+         * Registering the file path on the system
+         * You could also choose to save the original name and corresponding info so as to display it on the frontend
+         */
         $user->setAvatar($request->getUploadedFiles()["avatar"]["uploaded_file"]);
 
         $db = new DB();
