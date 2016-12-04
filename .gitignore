@@ -4,3 +4,6 @@ Would skip repository vendor/romenys/http/
 web/vendor/
 web/uploads/*
 !web/uploads/.gitkeep
+
+app/config/parameters/*
+!app/config/parameters/__ENV__.json

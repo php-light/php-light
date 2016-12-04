@@ -6,8 +6,8 @@
     "INT": {},
 
     "DEV": {
-      "0": "modifsadmi.bnpparibas.dev",
-      "1": "modifsadmi.dev.bnpparibas",
+      "0": "romenys.dev",
+      "1": "romenys.int",
       "2": "localhost"
     }
 }

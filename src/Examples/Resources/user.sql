@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS `modifcardif`;
+CREATE DATABASE IF NOT EXISTS `romenys`;
 
-USE `modifcardif`;
+USE `romenys`;
 
-CREATE TABLE IF NOT EXISTS `modifcardif`.`user` (
+CREATE TABLE IF NOT EXISTS `romenys`.`user` (
   `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(50) NOT NULL DEFAULT '',
   `email` VARCHAR(50) NOT NULL DEFAULT '',
