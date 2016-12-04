@@ -19,6 +19,8 @@ class User extends Model
 
     private $email;
 
+    private $avatar;
+
     public function setId($id)
     {
         $this->id = $id;
@@ -53,5 +55,17 @@ class User extends Model
     public function getEmail()
     {
         return $this->email;
+    }
+
+    public function setAvatar($avatar)
+    {
+        $this->avatar = $avatar;
+
+        return $this;
+    }
+
+    public function getAvatar()
+    {
+        return $this->avatar;
     }
 }

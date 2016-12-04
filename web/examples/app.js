@@ -19,24 +19,45 @@ app.controller('UserShowController', ['$scope', '$http', '$routeParams', functio
         });
 }]);
 
-app.controller('UserController', ['$scope', '$http', function ($scope, $http) {
-    $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+app.controller('UserController', ['$scope', '$http', 'Upload', function ($scope, $http, Upload) {
 
     console.log('UserController');
 
     $scope.user = {
         name: 'test Test',
-        email: 'test@mail.com'
+        email: 'test@mail.com',
+        avatar: ''
     };
 
     $scope.submit = function (user) {
-        console.log(user);
-        $http.post('/app.php?route=user_new', user)
-            .then(function (response) {
-                console.log(response);
-            }, function (response) {
-                console.log('Error status: ' + response.status);
-            });
+        console.log(user.avatar);
+
+        if (user.avatar === undefined || user.avatar === '') {
+            console.log('if');
+            $http.post('/app.php?route=user_new', user)
+                .then(function (response) {
+                    console.log(response);
+                }, function (response) {
+                    console.log('Error status: ' + response.status);
+                });
+        } else {
+            console.log('else');
+
+            Upload.upload({
+                url: '/app.php?route=user_new',
+                data: {user: user}
+            })
+                .then(function (response) {
+                    console.log(response);
+                    console.log('Success ' + response.config.data.user.avatar + 'uploaded. Response: ' + response.data);
+                }, function (response) {
+                    console.log('Error status: ' + response.status);
+                }, function (evt) {
+                    console.log(evt);
+                    var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+                    console.log('progress: ' + progressPercentage + '% ' + evt.config.data.user.avatar);
+                });
+        }
     };
 }]);
 

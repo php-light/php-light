@@ -30,22 +30,28 @@ class ExamplesController extends Controller
 
     public function newAction(Request $request)
     {
-        $user = new User($request->getPost());
+        $request->uploadFiles();
+
+        $user = new User($request->getPost()["user"]);
+        $user->setAvatar($request->getUploadedFiles()["avatar"]["uploaded_file"]);
 
         $db = new DB();
         $db = $db->connect();
 
-        $query = $db->prepare("INSERT INTO `modifcardif`.`user` (`name`, `email`) VALUES (:name, :email)");
+        $query = $db->prepare("INSERT INTO `modifcardif`.`user` (`name`, `email`, `avatar`) VALUES (:name, :email, :avatar)");
 
         $query->bindValue(":name", $user->getName());
         $query->bindValue(":email", $user->getEmail());
+        $query->bindValue(":avatar", $user->getAvatar());
 
         $query->execute();
+
 
         return new JsonResponse([
             "user" => [
                 "name" => $user->getName(),
-                "email" => $user->getEmail()
+                "email" => $user->getEmail(),
+                "avatar" => $user->getAvatar()
             ]
         ]);
     }
