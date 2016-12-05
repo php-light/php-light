@@ -22,8 +22,8 @@ class ExamplesController extends Controller
         $db = new DB();
         $db = $db->connect();
 
-        $request = $db->query("SELECT * FROM `user`");
-        $users = $request->fetchAll($db::FETCH_ASSOC);
+        $query = $db->query("SELECT * FROM `user`");
+        $users = $query->fetchAll($db::FETCH_ASSOC);
 
         return new JsonResponse(["users" => $users]);
     }
@@ -76,7 +76,8 @@ class ExamplesController extends Controller
         return new JsonResponse([
             "user" => [
                 "name" => $user->getName(),
-                "email" => $user->getEmail()
+                "email" => $user->getEmail(),
+                "avatar" => $user->getAvatar()
             ]
         ]);
     }

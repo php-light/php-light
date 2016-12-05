@@ -20,7 +20,6 @@ app.controller('UserShowController', ['$scope', '$http', '$routeParams', functio
 }]);
 
 app.controller('UserController', ['$scope', '$http', 'Upload', function ($scope, $http, Upload) {
-
     console.log('UserController');
 
     $scope.user = {
@@ -94,7 +93,6 @@ app.controller('DefaultController', ['$http', function ($http) {
 }]);
 
 app.controller('FormController', ['$scope', '$http', 'Upload', function ($scope, $http, Upload) {
-
     console.log('FormController');
 
     $scope.user = {
