@@ -39,15 +39,17 @@ class ExamplesController extends Controller
          * You could also choose to save the original name and corresponding info so as to display it on the frontend
          */
         $user->setAvatar($request->getUploadedFiles()["avatar"]["uploaded_file"]);
+        $user->setProfile($request->getUploadedFiles()["profile"]["uploaded_file"]);
 
         $db = new DB();
         $db = $db->connect();
 
-        $query = $db->prepare("INSERT INTO `user` (`name`, `email`, `avatar`) VALUES (:name, :email, :avatar)");
+        $query = $db->prepare("INSERT INTO `user` (`name`, `email`, `avatar`, `profile`) VALUES (:name, :email, :avatar, :profile)");
 
         $query->bindValue(":name", $user->getName());
         $query->bindValue(":email", $user->getEmail());
         $query->bindValue(":avatar", $user->getAvatar());
+        $query->bindValue(":profile", $user->getProfile());
 
         $query->execute();
 
@@ -56,7 +58,8 @@ class ExamplesController extends Controller
             "user" => [
                 "name" => $user->getName(),
                 "email" => $user->getEmail(),
-                "avatar" => $user->getAvatar()
+                "avatar" => $user->getAvatar(),
+                "profile" => $user->getProfile()
             ]
         ]);
     }

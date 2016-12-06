@@ -21,6 +21,8 @@ class User extends Model
 
     private $avatar;
 
+    private $profile;
+
     public function setId($id)
     {
         $this->id = $id;
@@ -67,5 +69,17 @@ class User extends Model
     public function getAvatar()
     {
         return $this->avatar;
+    }
+
+    public function setProfile($profile)
+    {
+        $this->profile = $profile;
+
+        return $this;
+    }
+
+    public function getProfile()
+    {
+        return $this->profile;
     }
 }

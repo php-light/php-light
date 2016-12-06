@@ -9,3 +9,5 @@ CREATE TABLE IF NOT EXISTS `romenys`.`user` (
   `avatar` VARCHAR(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 )ENGINE = InnoDB;
+
+ALTER TABLE `romenys`.`user` ADD COLUMN `profile` VARCHAR(255) NOT NULL DEFAULT '' AFTER `avatar`;
