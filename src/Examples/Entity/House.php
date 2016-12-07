@@ -13,6 +13,11 @@ use Romenys\Framework\Components\Model;
 class House extends Model
 {
     /**
+     * @var integer
+     */
+    private $id;
+
+    /**
      * @var string
      */
     private $color = '';
@@ -21,6 +26,22 @@ class House extends Model
      * @var User
      */
     private $user;
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
 
     /**
      * @return string

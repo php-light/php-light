@@ -26,6 +26,10 @@ app.config(function($routeProvider) {
             templateUrl: 'web/examples/templates/house/new.html',
             controller: 'HouseNewController'
         })
+        .when('/house/:id', {
+            templateUrl: 'web/examples/templates/house/show.html',
+            controller: 'HouseShowController'
+        })
         // .otherwise({
         //     redirectTo: '/error/404'
         // });

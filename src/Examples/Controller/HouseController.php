@@ -14,14 +14,13 @@ use Examples\Entity\User;
 use Romenys\Framework\Components\DB\DB;
 use Romenys\Framework\Controller\Controller;
 use Romenys\Http\Request\Request;
+use Romenys\Http\Response\JsonResponse;
 
 class HouseController extends Controller
 {
     public function newAction(Request $request)
     {
         $request->uploadFiles();
-//        dump($request->getUploadedFiles());
-//        dump($request->getPost());
 
         $house = new House($request->getPost()["house"]);
 
@@ -61,5 +60,25 @@ class HouseController extends Controller
         dump($user);
         dump($car);
         dump($house);
+
+        return new JsonResponse([
+            "user" => $user,
+            "car" => $car,
+            "house" => $house
+        ]);
+    }
+
+    public function showAction(Request $request)
+    {
+        $id = $request->getGet()["id"];
+
+        $db = new DB();
+        $db = $db->connect();
+
+        $house = $db->query("SELECT * FROM `house` WHERE id = " . $id)->fetch($db::FETCH_ASSOC);
+
+        return new JsonResponse([
+            "house" => $house
+        ]);
     }
 }

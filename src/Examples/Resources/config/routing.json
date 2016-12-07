@@ -21,7 +21,7 @@
             "action": "new"
         },
         "user_show": {
-            "path": "/user/{id}",
+            "path": "/user/:id",
             "controller": "Examples\\Controller\\Examples",
             "action": "show"
         },

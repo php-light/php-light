@@ -7,7 +7,18 @@ var app = angular.module('app',
     }
 );
 
-app.controller('HouseNewController', ['$scope', '$http', 'Upload', function ($scope, $httpn, Upload) {
+app.controller('HouseShowController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+    $scope.house = {};
+
+    $http.get('/app.php?route=house_show&id=' + $routeParams.id)
+        .then(function (response) {
+            $scope.house = response.data.house;
+        }, function (response) {
+            console.log(response.status);
+        });
+}]);
+
+app.controller('HouseNewController', ['$scope', '$http', 'Upload', function ($scope, $http, Upload) {
     console.log('HouseNewController');
 
     $scope.house = {
@@ -39,6 +50,9 @@ app.controller('HouseNewController', ['$scope', '$http', 'Upload', function ($sc
                 console.log('progress: ' + progressPercentage + '% ' + evt.config.data.house.avatar);
             });
 
+        /**
+         * When no pictures are uploaded you can use this one
+         */
         // $http.post('/app.php?route=house_new', house)
         //     .then(function (response) {
         //         console.log('success');
