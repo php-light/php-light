@@ -7,6 +7,48 @@ var app = angular.module('app',
     }
 );
 
+app.controller('HouseNewController', ['$scope', '$http', 'Upload', function ($scope, $httpn, Upload) {
+    console.log('HouseNewController');
+
+    $scope.house = {
+        color: 'red',
+        examples_entity_user: {
+            name: 'test House',
+            email: 'test@house.com'
+        },
+        examples_entity_car: {
+            brand: "Renault"
+        }
+    };
+
+    $scope.submit = function (house) {
+        console.log(house);
+
+        Upload.upload({
+            url: '/app.php?route=house_new',
+            data: {house: house}
+        })
+            .then(function (response) {
+                console.log(response);
+                console.log('Success ' + response.config.data.house.avatar + 'uploaded. Response: ' + response.data);
+            }, function (response) {
+                console.log('Error status: ' + response.status);
+            }, function (evt) {
+                console.log(evt);
+                var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+                console.log('progress: ' + progressPercentage + '% ' + evt.config.data.house.avatar);
+            });
+
+        // $http.post('/app.php?route=house_new', house)
+        //     .then(function (response) {
+        //         console.log('success');
+        //         console.log(response);
+        //     }, function (response) {
+        //         console.log(response.status);
+        //     });
+    };
+}]);
+
 app.controller('UserShowController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
     console.log('UserShowController');
     console.log($routeParams);

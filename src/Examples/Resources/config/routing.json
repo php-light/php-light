@@ -30,5 +30,8 @@
             "controller": "Examples\\Controller\\Examples",
             "action": "default"
         }
+    },
+    "file": {
+        "Examples": "src/Examples/Resources/config/house/house.json"
     }
 }

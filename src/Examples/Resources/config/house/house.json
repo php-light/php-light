@@ -1,0 +1,9 @@
+{
+  "route": {
+    "house_new": {
+      "path": "/house/new",
+      "controller": "Examples\\Controller\\House",
+      "action": "new"
+    }
+  }
+}
