@@ -57,10 +57,6 @@ class HouseController extends Controller
         $houseInsertQuery->bindValue(":user", $house->getUser()->getId());
         $houseInsertQuery->execute();
 
-        dump($user);
-        dump($car);
-        dump($house);
-
         return new JsonResponse([
             "user" => $user,
             "car" => $car,

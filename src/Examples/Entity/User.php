@@ -10,9 +10,12 @@ namespace Examples\Entity;
 
 
 use Romenys\Framework\Components\Model;
+use Romenys\Helpers\CreatedAtTrait;
 
 class User extends Model
 {
+    use CreatedAtTrait;
+
     private $id;
 
     private $name;
@@ -22,6 +25,11 @@ class User extends Model
     private $avatar;
 
     private $profile;
+
+    /**
+     * @var \DateTime
+     */
+    private $createdAt;
 
     public function setId($id)
     {
