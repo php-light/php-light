@@ -30,6 +30,10 @@ app.config(function($routeProvider) {
             templateUrl: 'web/examples/templates/house/show.html',
             controller: 'HouseShowController'
         })
+        .when('/pdf/new', {
+            templateUrl: 'web/examples/templates/pdf/new.html',
+            controller: 'PdfNewController'
+        })
         // .otherwise({
         //     redirectTo: '/error/404'
         // });

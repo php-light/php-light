@@ -7,6 +7,17 @@ var app = angular.module('app',
     }
 );
 
+app.controller('PdfNewController', ['$scope', '$http', function ($scope, $http) {
+    $scope.pdf = {};
+
+    $http.get('/app.php?route=pdf_new')
+        .then(function (response) {
+            $scope.pdf = response.data.pdf;
+        }, function (response) {
+            console.log(response.status);
+        });
+}]);
+
 app.controller('HouseShowController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
     $scope.house = {};
 

@@ -32,6 +32,7 @@
         }
     },
     "file": {
-        "Examples": "src/Examples/Resources/config/house/house.json"
+        "house": "src/Examples/Resources/config/house/house.json",
+        "pdf": "src/Examples/Resources/config/pdf/pdf.json"
     }
 }
