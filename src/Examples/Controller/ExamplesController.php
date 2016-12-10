@@ -53,7 +53,6 @@ class ExamplesController extends Controller
 
         $query->execute();
 
-
         return new JsonResponse([
             "user" => [
                 "name" => $user->getName(),

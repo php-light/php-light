@@ -25,6 +25,13 @@ class PdfController extends Controller
 
         $user = new User($userData);
 
-        return new JsonResponse(["pdf" => $user]);
+        $data = array (
+            'name' => $user->getName(),
+            'email' => $user->getEmail()
+        );
+
+        $template =  $this->render(__DIR__ . '/../Resources/views/pdf/pdf.php', $data);
+
+        $this->getSnappy()->generateFromHtml($template, 'tmp/somefile2.pdf');
     }
 }

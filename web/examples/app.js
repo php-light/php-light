@@ -7,12 +7,14 @@ var app = angular.module('app',
     }
 );
 
-app.controller('PdfNewController', ['$scope', '$http', function ($scope, $http) {
+app.controller('PdfNewController', ['$scope', '$http', '$sce', function ($scope, $http, $sce) {
     $scope.pdf = {};
 
-    $http.get('/app.php?route=pdf_new')
+    $http.get('/app.php?route=pdf_new', {responseType: 'arraybuffer'})
         .then(function (response) {
-            $scope.pdf = response.data.pdf;
+            var file = new Blob([response], {type: 'application/pdf'});
+            var fileURL = URL.createObjectURL(file);
+            $scope.content = $sce.trustAsResourceUrl(fileURL);
         }, function (response) {
             console.log(response.status);
         });
