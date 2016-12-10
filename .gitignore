@@ -9,5 +9,8 @@ web/vendor/
 web/uploads/*
 !web/uploads/.gitkeep
 
+tmp/*
+!tmp/.gitkeep
+
 app/config/parameters/*
 !app/config/parameters/__ENV__.json
