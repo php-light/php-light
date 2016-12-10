@@ -1,6 +1,8 @@
 .idea/
 Would skip repository vendor/romenys/http/
 
+composer.lock
+
 /vendor/
 
 web/vendor/
