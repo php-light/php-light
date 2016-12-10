@@ -25,13 +25,8 @@ class PdfController extends Controller
 
         $user = new User($userData);
 
-        $data = array (
-            'name' => $user->getName(),
-            'email' => $user->getEmail()
-        );
+        $template =  $this->render(__DIR__ . '/../Resources/views/pdf/', 'pdf.twig', ["user" => $user]);
 
-        $template =  $this->render(__DIR__ . '/../Resources/views/pdf/pdf.php', $data);
-
-        $this->getSnappy()->generateFromHtml($template, 'tmp/somefile2.pdf');
+        $this->getSnappy()->generateFromHtml($template, 'tmp/somefile6.pdf');
     }
 }

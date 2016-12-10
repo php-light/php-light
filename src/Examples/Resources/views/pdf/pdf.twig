@@ -12,8 +12,11 @@
 </head>
 <body>
 <div class="jumbotron">
-    name {{ name }}
-    email {{ email }}
+    name {{ user.name }}
+    email {{ user.email }}
+    <img src="http://romenys.dev/{{ user.avatar }}" alt="">
+    <hr>
+    {{ user.profile }}
 </div>
 </body>
 </html>
