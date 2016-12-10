@@ -20,6 +20,7 @@
         "romenys/helpers": "@dev",
         "romenys/router": "@dev",
         "romenys/http": "@dev",
-        "romenys/framework": "@dev"
+        "romenys/framework": "@dev",
+        "romenys/logger": "@dev"
     }
 }
