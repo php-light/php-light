@@ -27,6 +27,11 @@ class PdfController extends Controller
 
         $template =  $this->render(__DIR__ . '/../Resources/views/pdf/', 'pdf.twig', ["user" => $user]);
 
-        $this->getSnappy()->generateFromHtml($template, 'tmp/somefile6.pdf');
+//        $this->getSnappy()->generateFromHtml($template, 'tmp/somefile6.pdf');
+
+        header("Content-type:application/pdf");
+        header("Content-Disposition:attachment;filename='downloaded.pdf'");
+
+        readfile("tmp/somefile6.pdf");
     }
 }
