@@ -30,7 +30,7 @@ app.config(function($routeProvider) {
             templateUrl: 'web/examples/templates/house/show.html',
             controller: 'HouseShowController'
         })
-        .when('/pdf/new', {
+        .when('/pdf/:id', {
             templateUrl: 'web/examples/templates/pdf/new.html',
             controller: 'PdfNewController'
         })

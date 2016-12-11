@@ -21,17 +21,23 @@ class PdfController extends Controller
         $db = new DB();
         $db = $db->connect();
 
-        $userData = $db->query("SELECT * FROM `user` WHERE `id` = " . 20)->fetch($db::FETCH_ASSOC);
+        $userId = $request->getGet()["id"];
+
+        $userData = $db->query("SELECT * FROM `user` WHERE `id` = " . $userId)->fetch($db::FETCH_ASSOC);
 
         $user = new User($userData);
 
         $template =  $this->render(__DIR__ . '/../Resources/views/pdf/', 'pdf.twig', ["user" => $user]);
 
-//        $this->getSnappy()->generateFromHtml($template, 'tmp/somefile6.pdf');
+        if (is_file('tmp/' . $userId . '.pdf')) unlink('tmp/' . $userId . '.pdf');
+
+        $this->getSnappy()->generateFromHtml($template, 'tmp/' . $userId . '.pdf');
 
         header("Content-type:application/pdf");
-        header("Content-Disposition:attachment;filename='downloaded.pdf'");
+        header("Content-Disposition:attachment;filename='" . $user->getName() . ".pdf'");
 
-        readfile("tmp/somefile6.pdf");
+        readfile("tmp/" . $userId . ".pdf");
+
+        unlink('tmp/' . $userId . '.pdf');
     }
 }
