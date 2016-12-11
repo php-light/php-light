@@ -12,5 +12,8 @@ web/uploads/*
 tmp/*
 !tmp/.gitkeep
 
+var/cache/*
+!var/cache/.gitkeep
+
 app/config/parameters/*
 !app/config/parameters/__ENV__.json
