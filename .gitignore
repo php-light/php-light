@@ -1,5 +1,4 @@
 .idea/
-Would skip repository vendor/romenys/http/
 
 composer.lock
 
@@ -14,6 +13,9 @@ tmp/*
 
 var/cache/*
 !var/cache/.gitkeep
+
+var/logs/*
+!var/logs/.gitkeep
 
 app/config/parameters/*
 !app/config/parameters/__ENV__.json
