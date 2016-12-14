@@ -31,13 +31,6 @@ class PdfController extends Controller
 
         if (is_file('tmp/' . $userId . '.pdf')) unlink('tmp/' . $userId . '.pdf');
 
-        $this->getSnappy()->generateFromHtml($template, 'tmp/' . $userId . '.pdf');
-
-        header("Content-type:application/pdf");
-        header("Content-Disposition:attachment;filename='" . $user->getName() . ".pdf'");
-
-        readfile("tmp/" . $userId . ".pdf");
-
-        unlink('tmp/' . $userId . '.pdf');
+        return new JsonResponse(["user" => $user->getName()]);
     }
 }
