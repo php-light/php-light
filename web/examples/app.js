@@ -12,7 +12,23 @@ app.controller('PdfNewController', ['$scope', '$http', '$routeParams', function 
 
     $http.get('/app.php?route=pdf_new&id=' + $routeParams.id)
         .then(function (response) {
-            $scope.pdf = response.data;
+            // $scope.pdf = response.data.template;
+            console.log(response.data);
+
+            // var pdf = new jsPDF('p', 'pt');
+            // pdf.addHTML(document.body,  function() {
+            //     // pdf.save('web.pdf');
+            // });
+            //
+            // var pdfData = pdf.output();
+            //
+            // var data = new FormData();
+            // data.append("data" , pdfData);
+            // var xhr = new XMLHttpRequest();
+            // xhr.open( 'post', '/app.php?route=pdf_new&id=' + $routeParams.id, true ); //Post to php Script to save to server
+            // xhr.send(data);
+
+            // $http.post('/app.php?route=pdf_new&id=' + $routeParams.id, data);
         }, function (response) {
             console.log(response.status);
         });

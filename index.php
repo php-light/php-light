@@ -13,6 +13,9 @@
     <script src="web/vendor/angular-route/angular-route.min.js"></script>
     <script src="web/vendor/ng-file-upload-shim/ng-file-upload-shim.min.js"></script>
     <script src="web/vendor/ng-file-upload/ng-file-upload.min.js"></script>
+    <script src="web/vendor/html2canvas/build/html2canvas.min.js"></script>
+    <script src="web/vendor/jspdf/dist/jspdf.min.js"></script>
+    <script src="web/vendor/jspdf/dist/jspdf.debug.js"></script>
 
     <script src="web/examples/app.js"></script>
 

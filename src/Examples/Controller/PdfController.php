@@ -27,10 +27,21 @@ class PdfController extends Controller
 
         $user = new User($userData);
 
-        $template =  $this->render(__DIR__ . '/../Resources/views/pdf/', 'pdf.twig', ["user" => $user]);
+//        if (!empty($request->getPost())) {
+//            $data = $request->getPost()["data"];
+//
+//            $fileName = "web/upload/$userId.pdf";
+//
+//            if (is_file($fileName)) unlink($fileName);
+//
+//            $file = fopen($fileName, 'w'); // open the file path
+//            fwrite($file, $data); //save data
+//            fclose($file);
+//        }
+        // We are also able to render templates directly with twig. In this case call the app.php directly with an echo of the render method
+        // echo $this->render(__DIR__ . '/../Resources/views/pdf/', 'pdf.twig', ["user" => $user]);
 
-        if (is_file('tmp/' . $userId . '.pdf')) unlink('tmp/' . $userId . '.pdf');
-
-        return new JsonResponse(["user" => $user->getName()]);
+        // We can also return the html as a json result if required
+        return new JsonResponse(["user" => $user->getName(), "template" => $this->render(__DIR__ . '/../Resources/views/pdf/', 'pdf.twig', ["user" => $user])]);
     }
 }

@@ -16,7 +16,6 @@
     "require": {
         "symfony/var-dumper": "^3.1",
         "iknsa/helper-bundle": "@dev",
-        "romenys/components": "@dev",
         "romenys/helpers": "@dev",
         "romenys/router": "@dev",
         "romenys/http": "@dev",
