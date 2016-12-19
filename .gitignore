@@ -18,4 +18,7 @@ var/logs/*
 !var/logs/.gitkeep
 
 app/config/parameters/*
-!app/config/parameters/__ENV__.json
+!app/config/parameters/file_to_duplicate_and_rename_with_target_environment_name.json
+
+app/config/config/*
+!app/config/config/file_to_duplicate_and_rename_with_target_environment_name.json
