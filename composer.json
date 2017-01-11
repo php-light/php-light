@@ -19,10 +19,10 @@
         "iknsa/helper-bundle": "^0.0.1",
         "romenys/helpers": "^0.0.1",
         "romenys/router": "^0.0.2",
-        "romenys/http": "0.0.1",
-        "romenys/framework": "0.0.1",
-        "romenys/logger": "0.0.1",
+        "romenys/http": "^0.0.1",
+        "romenys/framework": "^0.0.1",
+        "romenys/logger": "^0.0.1",
         "twig/twig": "^1.28",
-        "romenys/serializer": "0.0.1"
+        "romenys/serializer": "^0.0.1"
     }
 }
