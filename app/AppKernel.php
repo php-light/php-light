@@ -14,11 +14,11 @@ class AppKernel
 {
     public function __construct()
     {
-        if (!session_start()) throw new RuntimeException("We were unable to start a session", 403);
+        if (!session_start()) throw new \RuntimeException("We were unable to start a session", 403);
 
-        if (!isset($_POST[0]) && !empty($_POST[0])) {
+        if (!isset($_POST[0]) && empty($_POST[0])) {
             // Hack for Angular POST as PHP does not desirialize json natively
-            $_POST = empty($_POST) ? $_POST = empty(json_decode(file_get_contents('php://input'),true)) ? $_POST : json_decode(file_get_contents('php://input'),true) : $_POST;
+            $_POST = empty($_POST) ? $_POST = empty(json_decode(file_get_contents('php://input'), true)) ? $_POST : json_decode(file_get_contents('php://input'),true) : $_POST;
         } else {
             // Hack for PHP7
             foreach ($_POST as $data => $empty) {
