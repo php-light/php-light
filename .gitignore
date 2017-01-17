@@ -26,3 +26,5 @@ app/config/config/*
 !app/config/config/file_to_duplicate_and_rename_with_target_environment_name.json
 
 .sass-cache/*
+
+phpunit.xml

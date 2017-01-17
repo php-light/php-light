@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/5.7/phpunit.xsd"
-         bootstrap="tests/bootstrap.php"
+         bootstrap="vendor/autoload.php"
          backupGlobals="false"
          verbose="true">
     <testsuites>
@@ -13,7 +13,7 @@
         </testsuite>
 
         <testsuite name="romenys_large">
-            <directory>vendor/romenys/*/Controller/Test</directory>
+            <directory>./vendor/romenys/framework/Controller/Test/</directory>
         </testsuite>
     </testsuites>
 
