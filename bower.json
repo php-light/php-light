@@ -22,9 +22,11 @@
     "ng-file-upload": "^12.2.13",
     "ckeditor_4.6.1_basic": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.6.1/ckeditor_4.6.1_basic.zip",
     "ng-ckeditor": "^0.2.1",
-    "iknsa-ng-flashes": "^0.0.1"
+    "iknsa-ng-flashes": "^0.0.1",
+    "angular-mocks": "^1.6.1"
   },
   "resolutions": {
     "angular": "1.6.1"
-  }
+  },
+  "devDependencies": {}
 }

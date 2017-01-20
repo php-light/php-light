@@ -28,3 +28,5 @@ app/config/config/*
 .sass-cache/*
 
 phpunit.xml
+
+node_modules/
