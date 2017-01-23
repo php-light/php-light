@@ -30,3 +30,7 @@ app/config/config/*
 phpunit.xml
 
 node_modules/
+
+jasmine-test/specs/vendor/
+
+jasmine-test/.idea/
