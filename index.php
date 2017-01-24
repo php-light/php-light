@@ -17,8 +17,6 @@
     <script src="web/examples/app.js"></script>
 
     <script src="web/examples/scripts/config/config.js"></script>
-
-
 </head>
 <body>
 <ng-view></ng-view>
