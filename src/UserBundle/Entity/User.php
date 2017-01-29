@@ -34,7 +34,7 @@ class User extends Model
     protected $name;
 
     /**
-     * @var int
+     * @var string
      */
     protected $tel;
 
@@ -102,7 +102,7 @@ class User extends Model
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getTel()
     {
@@ -110,7 +110,7 @@ class User extends Model
     }
 
     /**
-     * @param int $tel
+     * @param string $tel
      * @return User
      */
     public function setTel($tel)
