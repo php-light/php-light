@@ -44,6 +44,22 @@ class UserRepository
 
         $data = $db->query("SELECT * FROM `user` WHERE `uniqueId` = '" . $uniqueId . "'")->fetch($db::FETCH_ASSOC);
 
-        return new Client($data);
+        return new User($data);
+    }
+
+    public function listAll()
+    {
+        $db = new DB();
+        $db = $db->connect();
+
+        $query = $db->query("SELECT * FROM `user`");
+        $usersArray = $query->fetchAll($db::FETCH_ASSOC);
+
+        $users = [];
+        foreach ($usersArray as $data) {
+            $users[] = new User($data);
+        }
+
+        return $users;
     }
 }

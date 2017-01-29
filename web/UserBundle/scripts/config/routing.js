@@ -6,8 +6,12 @@ user.config(function($routeProvider) {
             templateUrl: 'web/UserBundle/templates/new.html',
             controller: 'NewUserController'
         })
-        .when('/client/edit/:uniqueId', {
+        .when('/user/edit/:uniqueId', {
             templateUrl: 'web/UserBundle/templates/edit.html',
             controller: 'EditUserController'
+        })        
+        .when('/user/list/', {
+            templateUrl: 'web/UserBundle/templates/list.html',
+            controller: 'ListUserController'
         });
 });

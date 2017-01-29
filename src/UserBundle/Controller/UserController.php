@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by iKNSA.
- * Author: Khalid Sookia <khalidsookia@gmail.com>
- * Date: 24/01/17
- * Time: 13:31
- */
 
 namespace UserBundle\Controller;
 
@@ -19,12 +13,12 @@ class UserController extends Controller
 {
     public function newAction(Request $request)
     {
-        $clientRepository = new UserRepository();
+        $UserRepository = new UserRepository();
 
         if ($request->getMethod() === $request::REQUEST_METHOD_POST) {
             $user = new User($request->getPost()["user"]);
 
-            if ($clientRepository->create($user)) {
+            if ($UserRepository->create($user)) {
                 return new JsonResponse([
                     "success" => true,
                     "message" => "L'utilisateur a bien été ajouté",
@@ -80,5 +74,30 @@ class UserController extends Controller
             "message" => "Affichage du formulaire update",
             "user" => $user->toArray()
         ]);
+    }
+
+    public function listAction()
+    {
+        $UserRepository = new UserRepository();
+
+        $usersObjects = $UserRepository->listAll();
+
+        $users = [];
+        if ($usersObjects) {
+            foreach ($usersObjects as $userObject) {
+                $users[] = $userObject->toArray();
+            }
+
+            return new JsonResponse([
+                "success" => true,
+                "message" => "La liste des users est bien affiché",
+                "users" => $users
+            ]);
+        } else {
+            return new JsonResponse([
+                "success" => false,
+                "message" => "Erreur"
+            ]);
+        }
     }
 }
