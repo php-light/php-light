@@ -1,5 +1,5 @@
 {
     "file": {
-        "Examples": "src/Examples/Resources/config/routing.json"
+        "user": "src/UserBundle/Resources/config/routing/user.json"
     }
 }
