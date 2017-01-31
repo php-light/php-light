@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Fri Jan 20 2017 10:27:58 GMT+0100 (CET)
+// Generated on Fri Jan 20 2017 14:42:25 GMT+0100 (CET)
 
 module.exports = function(config) {
   config.set({
@@ -15,8 +15,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'jasmine/src/*.js',
-      'jasmine/spec/*.js'
+      'node_modules/angular/angular.js',
+      'node_modules/angular-mocks/angular-mocks.js',
+      'web/jasmine-test/specs/src/**/*.js',
+      'web/jasmine-test/src/**/*.js'
     ],
 
 
@@ -56,12 +58,12 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Firefox', 'PhantomJS'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: true,
+    singleRun: false,
 
     // Concurrency level
     // how many browser should be started simultaneous
