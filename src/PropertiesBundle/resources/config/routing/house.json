@@ -1,0 +1,14 @@
+{
+  "route": {
+    "house_new": {
+      "path": "/house/new",
+      "controller": "PropertiesBundle\\Controller\\House",
+      "action": "new"
+    },
+    "house_edit": {
+      "path": "/house/edit/{{id}}",
+      "controller": "PropertiesBundle\\Controller\\House",
+      "action": "edit"
+    }
+  }
+}
