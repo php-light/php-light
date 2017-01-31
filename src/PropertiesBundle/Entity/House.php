@@ -9,15 +9,15 @@ use Romenys\Framework\Components\Model;
 */
 class House extends Model
 {
-	/**
-	 * @var int
-	 */
-	private $id;
-
-	/**
-     * @var string
+    /**
+     * @var $id
      */
-    private $color = '';
+    private $id;
+
+    /**
+     * @var $color
+     */
+    private $color;
 
     /**
      * @return int
