@@ -12,7 +12,7 @@ class House extends Model
     /**
      * @var $id
      */
-    private $id;
+	private $id;
 
     /**
      * @var $color

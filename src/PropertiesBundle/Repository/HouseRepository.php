@@ -21,4 +21,24 @@ class HouseRepository
 
         return $query->execute();
     }
+
+    public function findById($id)
+    {
+        $db = (new DB())->connect();
+
+        $houseData = $db->query("SELECT * FROM `house` WHERE `id`= '" . $id . "'")->fetch($db::FETCH_ASSOC);
+
+        return new House($houseData);
+    }
+
+    public function update(House $house)
+    {
+        $db = (new DB())->connect();
+
+        $query = $db->query(
+            "UPDATE `house` SET `name` = " . $house->getColor()
+        );
+
+        return $query->execute();
+    }
 }

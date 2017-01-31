@@ -39,4 +39,31 @@ class HouseController extends Controller
             "message" => "Affichage du formulaire"
         ]);
     }
+
+    public function editAction(Request $request)
+    {
+        $houseRepository = new HouseRepository();
+
+        $house = $houseRepository->findById($request->getGet()["id"]);
+
+        $response = [];
+        if ($request->getMethod() === $request::REQUEST_METHOD_POST) {
+            $house->setColor($request->getPost()["house"]["color"]);
+
+            $response["form"] = "isSubmitted";
+
+            if ($houseRepository->update($house)) {
+                $response["success"] = true;
+            } else {
+                $response["success"] = false;
+            }
+        } else {
+            $response["form"] = "create";
+        }
+
+        $response["success"] = true;
+        $response["assurance"] = $house->toArray();
+
+        return new JsonResponse($response);
+    }
 }
