@@ -18,7 +18,11 @@ class AppKernel
 
         if (!isset($_POST[0]) && empty($_POST[0])) {
             // Hack for Angular POST as PHP does not desirialize json natively
-            $_POST = empty($_POST) ? $_POST = empty(json_decode(file_get_contents('php://input'), true)) ? $_POST : json_decode(file_get_contents('php://input'),true) : $_POST;
+            if (empty($_POST)) {
+                if (!empty(file_get_contents('php://input'))) {
+                    $_POST = json_decode(file_get_contents('php://input'), true);
+                }
+            }
         } else {
             // Hack for PHP7
             foreach ($_POST as $data => $empty) {
