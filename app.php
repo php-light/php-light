@@ -8,6 +8,6 @@
 
 require 'vendor/autoload.php';
 
-use Romenys\app\AppKernel;
+use PhpLight\app\AppKernel;
 
 $app = new AppKernel();

@@ -1,1 +1,1 @@
-var RomenysHouse = angular.module('RomenysHouseModule', ['ngRoute']);
+var PhpLightHouse = angular.module('PhpLightHouseModule', ['ngRoute']);

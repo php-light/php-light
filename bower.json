@@ -1,13 +1,13 @@
 {
-  "name": "romenys",
-  "homepage": "https://github.com/romenys/romenys",
+  "name": "php-light",
+  "homepage": "https://github.com/php-light/php-light",
   "authors": [
     "Khalid Sookia <khalidsookia@gmail.com>"
   ],
-  "description": "Front ent dependencies for romenys framework",
+  "description": "Front ent dependencies for php-light framework",
   "main": "web/app/app.js",
   "keywords": [
-    "romenys",
+    "php-light",
     "front",
     "end",
     "framework"

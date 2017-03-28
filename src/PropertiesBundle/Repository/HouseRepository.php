@@ -2,7 +2,7 @@
 
 namespace PropertiesBundle\Repository;
 
-use Romenys\Framework\Components\DB\DB;
+use PhpLight\Framework\Components\DB\DB;
 use PropertiesBundle\Entity\House;
 
 /**

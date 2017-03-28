@@ -1,4 +1,4 @@
-RomenysHouse.controller('NewHouseController', ['$scope', '$http', function ($scope, $http) {
+PhpLightHouse.controller('NewHouseController', ['$scope', '$http', function ($scope, $http) {
 
 	$scope.house = {};
 

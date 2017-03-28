@@ -12,8 +12,8 @@
             <directory suffix="Test.php">tests/Util</directory>
         </testsuite>
 
-        <testsuite name="romenys_large">
-            <directory>./vendor/romenys/framework/Controller/Test/</directory>
+        <testsuite name="php-light_large">
+            <directory>./vendor/php-light/framework/Controller/Test/</directory>
         </testsuite>
     </testsuites>
 

@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS `romenys`;
+CREATE DATABASE IF NOT EXISTS `php-light`;
 
-USE `romenys`;
+USE `php-light`;
 
-CREATE TABLE `romenys`.`house` (
+CREATE TABLE `php-light`.`house` (
  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
  `color` VARCHAR(45) NOT NULL DEFAULT '',
  `user` INTEGER UNSIGNED DEFAULT NULL,

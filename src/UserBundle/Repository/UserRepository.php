@@ -9,7 +9,7 @@
 namespace UserBundle\Repository;
 
 
-use Romenys\Framework\Components\DB\DB;
+use PhpLight\Framework\Components\DB\DB;
 use UserBundle\Entity\User;
 
 class UserRepository

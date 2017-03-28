@@ -9,9 +9,9 @@
 namespace UserBundle\Controller;
 
 
-use Romenys\Framework\Controller\Controller;
-use Romenys\Http\Request\Request;
-use Romenys\Http\Response\JsonResponse;
+use PhpLight\Framework\Controller\Controller;
+use PhpLight\Http\Request\Request;
+use PhpLight\Http\Response\JsonResponse;
 use UserBundle\Entity\User;
 use UserBundle\Repository\UserRepository;
 

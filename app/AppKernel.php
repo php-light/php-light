@@ -6,9 +6,9 @@
  * Time: 14:05
  */
 
-namespace Romenys\app;
+namespace PhpLight\app;
 
-use Romenys\Framework\Components\HandleRequest;
+use PhpLight\Framework\Components\HandleRequest;
 
 class AppKernel
 {

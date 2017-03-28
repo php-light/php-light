@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS `romenys`;
+CREATE DATABASE IF NOT EXISTS `php-light`;
 
-USE `romenys`;
+USE `php-light`;
 
-CREATE TABLE IF NOT EXISTS `romenys`.`user` (
+CREATE TABLE IF NOT EXISTS `php-light`.`user` (
   `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(50) NOT NULL DEFAULT '',
   `email` VARCHAR(50) NOT NULL DEFAULT '',
@@ -10,4 +10,4 @@ CREATE TABLE IF NOT EXISTS `romenys`.`user` (
   PRIMARY KEY (`id`)
 )ENGINE = InnoDB;
 
-ALTER TABLE `romenys`.`user` ADD COLUMN `profile` VARCHAR(255) NOT NULL DEFAULT '' AFTER `avatar`;
+ALTER TABLE `php-light`.`user` ADD COLUMN `profile` VARCHAR(255) NOT NULL DEFAULT '' AFTER `avatar`;

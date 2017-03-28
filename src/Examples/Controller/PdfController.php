@@ -9,10 +9,10 @@
 namespace Examples\Controller;
 
 use Examples\Entity\User;
-use Romenys\Framework\Components\DB\DB;
-use Romenys\Framework\Controller\Controller;
-use Romenys\Http\Request\Request;
-use Romenys\Http\Response\JsonResponse;
+use PhpLight\Framework\Components\DB\DB;
+use PhpLight\Framework\Controller\Controller;
+use PhpLight\Http\Request\Request;
+use PhpLight\Http\Response\JsonResponse;
 
 class PdfController extends Controller
 {

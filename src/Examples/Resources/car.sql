@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS `romenys`;
+CREATE DATABASE IF NOT EXISTS `php-light`;
 
-USE `romenys`;
+USE `php-light`;
 
-CREATE TABLE IF NOT EXISTS `romenys`.`car` (
+CREATE TABLE IF NOT EXISTS `php-light`.`car` (
   `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   `brand` VARCHAR(45) NOT NULL DEFAULT '',
   `pictures` MEDIUMBLOB,

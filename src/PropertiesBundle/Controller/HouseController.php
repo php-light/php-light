@@ -3,10 +3,10 @@
 namespace PropertiesBundle\Controller;
 
 use PropertiesBundle\Entity\House;
-use Romenys\Framework\Controller\Controller;
+use PhpLight\Framework\Controller\Controller;
 use PropertiesBundle\Repository\HouseRepository;
-use Romenys\Http\Request\Request;
-use Romenys\Http\Response\JsonResponse;
+use PhpLight\Http\Request\Request;
+use PhpLight\Http\Response\JsonResponse;
 
 /**
 * House controller

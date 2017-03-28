@@ -6,8 +6,8 @@
     "INT": {},
 
     "DEV": {
-      "0": "romenys.dev",
-      "1": "romenys.int",
+      "0": "php-light.dev",
+      "1": "php-light.int",
       "2": "localhost"
     }
 }

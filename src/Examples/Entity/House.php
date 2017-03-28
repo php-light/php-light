@@ -8,7 +8,7 @@
 
 namespace Examples\Entity;
 
-use Romenys\Framework\Components\Model;
+use PhpLight\Framework\Components\Model;
 
 class House extends Model
 {

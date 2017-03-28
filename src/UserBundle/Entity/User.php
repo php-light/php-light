@@ -10,8 +10,8 @@ namespace UserBundle\Entity;
 
 
 use IKNSA\HelperBundle\Traits\GenerateUniqueIdTrait;
-use Romenys\Framework\Components\Model;
-use Romenys\Helpers\CreatedAtTrait;
+use PhpLight\Framework\Components\Model;
+use PhpLight\Helpers\CreatedAtTrait;
 
 class User extends Model
 {
