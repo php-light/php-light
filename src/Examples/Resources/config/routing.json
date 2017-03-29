@@ -1,38 +1,38 @@
 {
     "route": {
-        "homepage": {
+        "examples_homepage": {
             "path": "/",
             "controller": "Examples\\Controller\\Examples",
             "action": "homepage"
         },
-        "form": {
+        "examples_form": {
             "path": "/form",
             "controller": "Examples\\Controller\\Examples",
             "action": "form"
         },
-        "user_list": {
+        "examples_user_list": {
             "path": "/users",
             "controller": "Examples\\Controller\\Examples",
             "action": "list"
         },
-        "user_new": {
+        "examples_user_new": {
             "path": "/user/new",
             "controller": "Examples\\Controller\\Examples",
             "action": "new"
         },
-        "user_show": {
+        "examples_user_show": {
             "path": "/user/:id",
             "controller": "Examples\\Controller\\Examples",
             "action": "show"
         },
-        "default": {
+        "examples_default": {
             "path": "/",
             "controller": "Examples\\Controller\\Examples",
             "action": "default"
         }
     },
     "file": {
-        "house": "src/Examples/Resources/config/house/house.json",
-        "pdf": "src/Examples/Resources/config/pdf/pdf.json"
+        "examples_house": "src/Examples/Resources/config/house/house.json",
+        "examples_pdf": "src/Examples/Resources/config/pdf/pdf.json"
     }
 }

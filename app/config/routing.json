@@ -1,6 +1,7 @@
 {
     "file": {
+    	"examples": "src/Examples/Resources/config/routing.json",
         "user": "src/UserBundle/resources/config/routing.json",
-    	"properties": "src/PropertiesBundle/resources/config/routing.json"
+        "properties": "src/PropertiesBundle/resources/config/routing.json"
     }
 }
