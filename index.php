@@ -14,11 +14,14 @@
     <script src="web/vendor/ng-file-upload-shim/ng-file-upload-shim.min.js"></script>
     <script src="web/vendor/ng-file-upload/ng-file-upload.min.js"></script>
 
-    <!-- HOUSE -->
+
+    <!--  Examples  -->
+    <script src="web/bundles/acme/scripts/acme.js"></script>
+    <script src="web/bundles/acme/scripts/config/routing.js"></script>
+    <script src="web/bundles/acme/scripts/controller/HomepageController.js"></script>
+
     <script type="text/javascript" src="web/bundles/app/scripts/app.js"></script>
-    <script type="text/javascript" src="web/bundles/PropertiesBundle/scripts/House/house.js"></script>
-    <script type="text/javascript" src="web/bundles/PropertiesBundle/scripts/config/routing.js"></script>
-    <script type="text/javascript" src="web/bundles/PropertiesBundle/scripts/controller/HouseNewController.js"></script>
+
 </head>
 <body>
 <ng-view></ng-view>

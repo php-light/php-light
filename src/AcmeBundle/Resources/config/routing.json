@@ -1,0 +1,9 @@
+{
+    "route": {
+        "acme_homepage": {
+            "path": "/",
+            "controller": "AcmeBundle\\Controller\\Default",
+            "action": "index"
+        }
+    }
+}
