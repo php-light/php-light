@@ -1,9 +1,0 @@
-{
-  "route": {
-    "pdf_new": {
-      "path": "/pdf/new",
-      "controller": "Examples\\Controller\\Pdf",
-      "action": "new"
-    }
-  }
-}
